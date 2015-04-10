@@ -27,6 +27,18 @@
     return self;
 }
 
+- (void)loadView {
+    //为了解决使用autolayout之后，YAPanBackController手势返回抖动的问题；
+    if (IOS_VERSION >= 8.0) {
+        [super loadView];
+    } else if (IOS_VERSION >= 7.0) {
+        self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    } else {
+        self.view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - PHONE_STATUSBAR_HEIGHT)];
+    }
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
