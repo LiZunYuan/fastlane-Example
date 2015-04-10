@@ -55,7 +55,7 @@
     titleLabel.font = [UIFont systemFontOfSize:size];
     titleLabel.text = title;
     titleLabel.textColor = [MIUtility colorWithHex:0x333333];
-    titleLabel.frame = CGRectMake(80, self.viewHeight - PHONE_NAVIGATION_BAR_ITEM_HEIGHT, 160, PHONE_NAVIGATION_BAR_ITEM_HEIGHT);
+    titleLabel.frame = CGRectMake(80, self.viewHeight - PHONE_NAVIGATION_BAR_ITEM_HEIGHT, SCREEN_WIDTH/2, PHONE_NAVIGATION_BAR_ITEM_HEIGHT);
     titleLabel.centerX = SCREEN_WIDTH/2;
     titleLabel.textAlignment = UITextAlignmentCenter;
     titleLabel.adjustsFontSizeToFitWidth = YES;
@@ -88,7 +88,7 @@
     titleLabel.font = [UIFont systemFontOfSize:size];
     titleLabel.text = title;
     titleLabel.textColor = color;
-    titleLabel.frame = CGRectMake(80, self.viewHeight - PHONE_NAVIGATION_BAR_ITEM_HEIGHT, 160, PHONE_NAVIGATION_BAR_ITEM_HEIGHT);
+    titleLabel.frame = CGRectMake(80, self.viewHeight - PHONE_NAVIGATION_BAR_ITEM_HEIGHT, SCREEN_WIDTH/2, PHONE_NAVIGATION_BAR_ITEM_HEIGHT);
     titleLabel.centerX = SCREEN_WIDTH/2;
     titleLabel.textAlignment = UITextAlignmentCenter;
     titleLabel.adjustsFontSizeToFitWidth = YES;
