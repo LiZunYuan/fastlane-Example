@@ -56,6 +56,7 @@
     titleLabel.text = title;
     titleLabel.textColor = [MIUtility colorWithHex:0x333333];
     titleLabel.frame = CGRectMake(80, self.viewHeight - PHONE_NAVIGATION_BAR_ITEM_HEIGHT, 160, PHONE_NAVIGATION_BAR_ITEM_HEIGHT);
+    titleLabel.centerX = SCREEN_WIDTH/2;
     titleLabel.textAlignment = UITextAlignmentCenter;
     titleLabel.adjustsFontSizeToFitWidth = YES;
     titleLabel.minimumFontSize = (size - 2);
@@ -71,7 +72,7 @@
     
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 58.5, 18)];
     imageView.image = [UIImage imageNamed:imageName];
-    imageView.centerX = self.viewWidth/2;
+    imageView.centerX = SCREEN_WIDTH/2;
     imageView.centerY = (IOS7_STATUS_BAR_HEGHT + self.viewHeight)/2;
     [self addSubview:imageView];
 }
@@ -88,6 +89,7 @@
     titleLabel.text = title;
     titleLabel.textColor = color;
     titleLabel.frame = CGRectMake(80, self.viewHeight - PHONE_NAVIGATION_BAR_ITEM_HEIGHT, 160, PHONE_NAVIGATION_BAR_ITEM_HEIGHT);
+    titleLabel.centerX = SCREEN_WIDTH/2;
     titleLabel.textAlignment = UITextAlignmentCenter;
     titleLabel.adjustsFontSizeToFitWidth = YES;
     titleLabel.minimumFontSize = (size - 2);
@@ -107,7 +109,7 @@
     titleLabel.font = [UIFont systemFontOfSize:size];
     titleLabel.text = title;
     titleLabel.textColor = [MIUtility colorWithHex:0x333333];
-    titleLabel.frame = CGRectMake(30, self.viewHeight - PHONE_NAVIGATION_BAR_ITEM_HEIGHT, self.viewWidth / 2, PHONE_NAVIGATION_BAR_ITEM_HEIGHT);
+    titleLabel.frame = CGRectMake(30, self.viewHeight - PHONE_NAVIGATION_BAR_ITEM_HEIGHT, SCREEN_WIDTH / 2, PHONE_NAVIGATION_BAR_ITEM_HEIGHT);
     titleLabel.adjustsFontSizeToFitWidth = YES;
     titleLabel.minimumFontSize = (size - 2);
     [self addSubview:titleLabel];
@@ -150,7 +152,7 @@
     }
     
     UIImage *normalImage = [UIImage imageNamed:image];
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(220, self.viewHeight - PHONE_NAVIGATION_BAR_ITEM_HEIGHT, 100, PHONE_NAVIGATION_BAR_ITEM_HEIGHT)];
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 100, self.viewHeight - PHONE_NAVIGATION_BAR_ITEM_HEIGHT, 100, PHONE_NAVIGATION_BAR_ITEM_HEIGHT)];
     [button setImage:normalImage forState:UIControlStateNormal];
     [button setImageEdgeInsets:UIEdgeInsetsMake(0.0, 50.0, 0.0, 0.0)];
     button.titleLabel.font = [UIFont systemFontOfSize:16.0];
@@ -166,9 +168,9 @@
         [_rightButton removeFromSuperview];
     }
     
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(self.viewWidth - 60, (self.viewHeight - PHONE_NAVIGATION_BAR_ITEM_HEIGHT), 60, PHONE_NAVIGATION_BAR_ITEM_HEIGHT)];
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 60, (self.viewHeight - PHONE_NAVIGATION_BAR_ITEM_HEIGHT), 60, PHONE_NAVIGATION_BAR_ITEM_HEIGHT)];
     CGSize size = [title sizeWithFont:button.titleLabel.font];
-    button.frame = CGRectMake(self.viewWidth - size.width - 16, (self.viewHeight - PHONE_NAVIGATION_BAR_ITEM_HEIGHT), size.width + 16, PHONE_NAVIGATION_BAR_ITEM_HEIGHT);
+    button.frame = CGRectMake(SCREEN_WIDTH - size.width - 16, (self.viewHeight - PHONE_NAVIGATION_BAR_ITEM_HEIGHT), size.width + 16, PHONE_NAVIGATION_BAR_ITEM_HEIGHT);
 
     [button setTitle:title forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont systemFontOfSize:16.0];

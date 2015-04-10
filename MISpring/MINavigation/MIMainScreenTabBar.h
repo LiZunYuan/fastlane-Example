@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #define TABBAR_HEIGHT     48
-#define TABBAR_ITEM_WIDTH 320.0/5.0
+#define TABBAR_ITEM_WIDTH SCREEN_WIDTH/5.0
 
 @protocol  MIMainScreenTabBarDelegate;
 
