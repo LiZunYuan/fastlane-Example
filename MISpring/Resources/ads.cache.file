@@ -1,0 +1,100 @@
+{
+  "recommendHeader" : [
+
+  ],
+  "mizheShortcuts" : [
+    {
+      "data" : "淘宝返利",
+      "img" : "http:\/\/simg.husor.cn\/resource\/80\/80ec3d8cefbbae1a58d2393b32f3d5d2_100x100.png",
+      "login" : 0,
+      "target" : "http:\/\/ai.m.taobao.com?pid=mm_35109883_5252078_25854255&unid=1",
+      "desc" : "淘宝返利",
+      "ver" : "1.0.0"
+    },
+    {
+      "data" : "all",
+      "img" : "http:\/\/s0.husor.cn\/prom\/2014\/q3\/beibeihw.png",
+      "login" : 0,
+      "target" : "http:\/\/m.beibei.com",
+      "desc" : "贝贝特卖",
+      "ver" : "3.4.0"
+    },
+    {
+      "data" : "9kuai9",
+      "img" : "http:\/\/s0.husor.cn\/prom\/2014\/q3\/img_99.png",
+      "login" : 0,
+      "target" : "10yuan",
+      "desc" : "9.9包邮",
+      "ver" : "3.2.0"
+    },
+    {
+      "data" : "",
+      "img" : "http:\/\/s0.husor.cn\/prom\/2014\/q3\/img_yugao.png",
+      "login" : 0,
+      "target" : "yugao",
+      "desc" : "明日预告",
+      "ver" : "1.0.0"
+    },
+    {
+      "data" : "nvzhuang",
+      "img" : "http:\/\/s0.husor.cn\/prom\/2014\/q3\/img_nvzhuang.png",
+      "login" : 0,
+      "target" : "temai",
+      "desc" : "女装",
+      "ver" : "3.2.0"
+    },
+    {
+      "data" : "jujia",
+      "img" : "http:\/\/s0.husor.cn\/prom\/2014\/q3\/img_jujia.png",
+      "login" : 0,
+      "target" : "temai",
+      "desc" : "居家",
+      "ver" : "3.2.0"
+    },
+    {
+      "data" : "muying",
+      "img" : "http:\/\/s0.husor.cn\/prom\/2014\/q3\/img_muying.png",
+      "login" : 0,
+      "target" : "temai",
+      "desc" : "母婴",
+      "ver" : "3.2.0"
+    },
+    {
+      "data" : "all",
+      "img" : "http:\/\/simg.husor.cn\/resource\/7b\/7bf114747cb214a016c7bb96c55df31a_100x100.png",
+      "login" : 0,
+      "target" : "temai",
+      "desc" : "全部",
+      "ver" : "3.2.0"
+    }
+  ],
+  "latestConfigTime" : 1417690945,
+  "ads" : [
+    {
+      "data" : "muying",
+      "img" : "http:\/\/simg.husor.cn\/resource\/ad\/adf4e204b53387312ec4b1585054ebe8_640x240.jpg",
+      "login" : 0,
+      "target" : "youpin",
+      "desc" : "muying",
+      "ver" : "3.2.0"
+    },
+    {
+      "data" : "meizhuang",
+      "img" : "http:\/\/simg.husor.cn\/resource\/3e\/3eb6c718f87d7abdcc33aedda76e6859_640x240.jpg",
+      "login" : 0,
+      "target" : "temai",
+      "desc" : "meizhuang",
+      "ver" : "3.2.0"
+    },
+    {
+      "data" : "摇一摇",
+      "img" : "http:\/\/s0.husor.cn\/prom\/2014\/q3\/yaojiao.jpg",
+      "login" : 1,
+      "target" : "http:\/\/m.mizhe.com\/prom\/yyy.html",
+      "desc" : "摇一摇",
+      "ver" : "1.0.0"
+    }
+  ],
+  "splashAds" : [
+  ]
+}
