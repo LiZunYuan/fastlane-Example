@@ -10,7 +10,7 @@
 #import "MIAdService.h"
 
 #define NOMARL_SPACE    8
-#define IMAGE_HEIGHT    115
+#define IMAGE_HEIGHT    115 * SCREEN_WIDTH / 320
 
 
 @implementation MIMainHeaderAdView

@@ -191,7 +191,7 @@
     if (_promotionShortcuts.count == 4)
     {
         self.bigAdsView.hidden = NO;
-        self.bigAdsView.frame = CGRectMake(0, _shortView.bottom, self.viewWidth, 160 + 8);
+        self.bigAdsView.frame = CGRectMake(0, _shortView.bottom, SCREEN_WIDTH, SCREEN_WIDTH / 2 + 8);
         [self.bigAdsView loadData:_promotionShortcuts];
     }
     else
@@ -217,7 +217,7 @@
     if (_squareShortcuts.count >= 3)
     {
         _squareAdsView.hidden = NO;
-        _squareAdsView.frame = CGRectMake(0, self.middleAdsView.bottom, self.viewWidth, 136);
+        _squareAdsView.frame = CGRectMake(0, self.middleAdsView.bottom, self.viewWidth, 136 * SCREEN_WIDTH / 320);
         [_squareAdsView loadData:_squareShortcuts];
     }
     else
@@ -255,7 +255,7 @@
     if (self.hasMore && (indexPath.row == rows) && (count > 0)) {
         return 50;
     } else {
-        return 205;
+        return (SCREEN_WIDTH - 24) / 2 + 48 + 8;
     }
 }
 

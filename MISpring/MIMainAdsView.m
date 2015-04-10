@@ -22,7 +22,7 @@
 
 - (void)awakeFromNib
 {
-    _badgeTimeView = [[MIBadgeTimeView alloc] initWithFrame:CGRectMake(80, 20, 20 * 3 + 10, 20)];
+    _badgeTimeView = [[MIBadgeTimeView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH / 4, 20, 20 * 3 + 10, 20)];
     _badgeTimeView.hidden = YES;
     [self.leftAdsImageView addSubview:_badgeTimeView];
 }

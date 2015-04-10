@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <deployment version="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,25 +11,43 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="136"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Hxk-1a-3Lj">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hxk-1a-3Lj" userLabel="left">
                     <rect key="frame" x="4" y="12" width="154" height="120"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="FyL-sU-uAh">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FyL-sU-uAh" userLabel="rightTop">
                     <rect key="frame" x="162" y="12" width="154" height="58"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3Ek-Uv-m9A">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Ek-Uv-m9A" userLabel="rightBottom">
                     <rect key="frame" x="162" y="74" width="154" height="58"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <view contentMode="scaleToFill" id="lcp-6T-fh9">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lcp-6T-fh9">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="8"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="8" id="gex-17-hil"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Hxk-1a-3Lj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="4Vh-HH-V2z"/>
+                <constraint firstItem="lcp-6T-fh9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="79f-Mh-5q7"/>
+                <constraint firstAttribute="trailing" secondItem="3Ek-Uv-m9A" secondAttribute="trailing" constant="4" id="Dy0-rD-9Bz"/>
+                <constraint firstAttribute="bottom" secondItem="Hxk-1a-3Lj" secondAttribute="bottom" constant="4" id="HJz-df-deO"/>
+                <constraint firstAttribute="trailing" secondItem="lcp-6T-fh9" secondAttribute="trailing" id="Inj-U0-trO"/>
+                <constraint firstItem="lcp-6T-fh9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MuR-Vd-EHm"/>
+                <constraint firstItem="3Ek-Uv-m9A" firstAttribute="leading" secondItem="Hxk-1a-3Lj" secondAttribute="trailing" constant="4" id="Ou8-Tk-n8g"/>
+                <constraint firstAttribute="trailing" secondItem="FyL-sU-uAh" secondAttribute="trailing" constant="4" id="TP3-4e-XmE"/>
+                <constraint firstItem="FyL-sU-uAh" firstAttribute="width" secondItem="Hxk-1a-3Lj" secondAttribute="width" id="V9O-Ib-PIe"/>
+                <constraint firstItem="FyL-sU-uAh" firstAttribute="height" secondItem="3Ek-Uv-m9A" secondAttribute="height" id="VYf-Ot-75i"/>
+                <constraint firstAttribute="bottom" secondItem="3Ek-Uv-m9A" secondAttribute="bottom" constant="4" id="eL8-qZ-DnS"/>
+                <constraint firstItem="FyL-sU-uAh" firstAttribute="top" secondItem="lcp-6T-fh9" secondAttribute="bottom" constant="4" id="gav-Fd-7im"/>
+                <constraint firstItem="3Ek-Uv-m9A" firstAttribute="top" secondItem="FyL-sU-uAh" secondAttribute="bottom" constant="4" id="l4c-gn-Od5"/>
+                <constraint firstItem="3Ek-Uv-m9A" firstAttribute="leading" secondItem="Hxk-1a-3Lj" secondAttribute="trailing" constant="4" id="q6V-Wm-YWd"/>
+                <constraint firstItem="FyL-sU-uAh" firstAttribute="leading" secondItem="Hxk-1a-3Lj" secondAttribute="trailing" constant="4" id="qlP-0i-Fy1"/>
+                <constraint firstItem="Hxk-1a-3Lj" firstAttribute="top" secondItem="lcp-6T-fh9" secondAttribute="bottom" constant="4" id="rG3-Cg-Kjf"/>
+                <constraint firstItem="3Ek-Uv-m9A" firstAttribute="top" secondItem="FyL-sU-uAh" secondAttribute="bottom" constant="4" id="zaf-c3-NKg"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>

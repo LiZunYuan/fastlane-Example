@@ -12,7 +12,7 @@
 #import "NSString+MIImageAppending.h"
 
 
-#define AD_VIEW_SIZE CGSizeMake(SCREEN_WIDTH, 100)
+#define AD_VIEW_SIZE CGSizeMake(SCREEN_WIDTH, 100 * SCREEN_WIDTH / 320)
 #define MI_MAINPAGE_ADS_SCHEDULED_TIMER_INTERVAL 5
 
 

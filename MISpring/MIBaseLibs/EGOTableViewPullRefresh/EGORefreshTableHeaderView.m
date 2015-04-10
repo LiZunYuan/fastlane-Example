@@ -65,7 +65,7 @@
 #endif
 		
 		[[self layer] addSublayer:layer];
-		_arrowImage=layer;
+		
         
         UIActivityIndicatorView *view = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
         view.frame = CGRectMake(105, _refreshTitleImg.bottom + 12, 24, 24);
@@ -82,7 +82,11 @@
         [self addSubview:label];
         _statusLabel=label;
         [label release];
-		
+        _statusLabel.centerX = (SCREEN_WIDTH + 24 + 8) / 2;
+        
+        layer.frame = CGRectMake(_statusLabel.left - 24 - 8, _refreshTitleImg.bottom + 12, 24, 24);
+        _activityView.frame = CGRectMake(_statusLabel.left - 24 - 8, _refreshTitleImg.bottom + 12, 24, 24);
+		_arrowImage=layer;
 		[self setState:EGOOPullRefreshNormal];
 		
     }

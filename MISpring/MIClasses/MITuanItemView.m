@@ -35,7 +35,7 @@
         self.exclusiveTouch = YES;
         [self addTarget:self action:@selector(actionClicked:) forControlEvents:UIControlEventTouchUpInside];
         
-        itemImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.viewWidth, 148)];
+        itemImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.viewWidth, self.viewWidth)];
         itemImage.clipsToBounds = YES;
         [itemImage setContentMode:UIViewContentModeScaleAspectFill];
         [self addSubview:itemImage];
@@ -77,14 +77,14 @@
         [indicatorView startAnimating];
         [itemImage addSubview:indicatorView];
         
-        price = [[RTLabel alloc] initWithFrame:CGRectMake(6, description.bottom + 8, 142, 18)];
+        price = [[RTLabel alloc] initWithFrame:CGRectMake(6, description.bottom + 8, self.viewWidth - 6, 18)];
         price.backgroundColor = [UIColor clearColor];
         price.textColor = [MIUtility colorWithHex:0xff3d00];
         price.textAlignment = RTTextAlignmentLeft;
         price.userInteractionEnabled = NO;
         [self addSubview:price];
         
-        viewsInfo = [[UILabel alloc] initWithFrame:CGRectMake(70, description.bottom + 8, 80,11)];
+        viewsInfo = [[UILabel alloc] initWithFrame:CGRectMake(70, description.bottom + 8, 80, 11)];
         viewsInfo.centerY = price.centerY;
         viewsInfo.backgroundColor = [UIColor clearColor];
         viewsInfo.textAlignment = NSTextAlignmentRight;

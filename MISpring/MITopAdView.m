@@ -8,7 +8,7 @@
 
 #import "MITopAdView.h"
 
-#define TOP_AD_HEIGHT   50
+#define TOP_AD_HEIGHT   50 * SCREEN_WIDTH / 320
 
 @interface MITopAdView()
 {
@@ -56,10 +56,14 @@
         return;
     }
     
+    CGFloat adHeight = TOP_AD_HEIGHT;
+    NSDictionary *adsDict = [self.adsArray objectAtIndex:0];
+    if ([adsDict objectForKey:@"height"] && [[adsDict objectForKey:@"height"] floatValue] > 0) {
+        adHeight = ([[adsDict objectForKey:@"height"] floatValue] / [[adsDict objectForKey:@"width"] floatValue]) * SCREEN_WIDTH;
+    }
     for (int i = 0; i < _adsArray.count; ++i) {
         NSDictionary *adsDict = [self.adsArray objectAtIndex:i];
-        
-        UIImageView *adsImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, i * TOP_AD_HEIGHT, self.viewWidth, TOP_AD_HEIGHT)];
+        UIImageView *adsImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, i * adHeight, self.viewWidth, adHeight)];
         adsImageView.tag = 10000 + i;
         adsImageView.contentMode = UIViewContentModeCenter;
         adsImageView.userInteractionEnabled = YES;
@@ -74,6 +78,6 @@
         [self addSubview:adsImageView];
     }
     
-    self.viewHeight = _adsArray.count * TOP_AD_HEIGHT;
+    self.viewHeight = _adsArray.count * adHeight;
 }
 @end

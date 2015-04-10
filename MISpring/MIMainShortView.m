@@ -38,8 +38,8 @@
         [_titles removeAllObjects];
         for (int i = 0; i < 4; i ++)
         {
-            int x = i * 80;
-            UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(x, 0, 80, 82)];
+            int x = i * SCREEN_WIDTH / 4;
+            UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(x, 0, SCREEN_WIDTH / 4, SCREEN_WIDTH / 4)];
             button.tag = i;
             button.backgroundColor = [UIColor clearColor];
             button.showsTouchWhenHighlighted = YES;
