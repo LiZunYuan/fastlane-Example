@@ -22,14 +22,14 @@
     if (self) {
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         
-        UIView *line1 = [[UIView alloc]initWithFrame:CGRectMake( 0, 0, self.viewWidth, 0.5)];
+        UIView *line1 = [[UIView alloc]initWithFrame:CGRectMake( 0, 0, SCREEN_WIDTH, 0.5)];
         line1.backgroundColor = [MIUtility colorWithHex:0xe4e4e4];
         [self addSubview:line1];
-        UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, line1.bottom, self.viewWidth, 8)];
+        UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, line1.bottom, SCREEN_WIDTH, 8)];
         lineView.backgroundColor = [MIUtility colorWithHex:0xeeeeee];
         [self addSubview:lineView];
         
-        _titleLabel = [[UILabel alloc] initWithFrame: CGRectMake(12, 12, SCREEN_WIDTH - 20, 20)];
+        _titleLabel = [[UILabel alloc] initWithFrame: CGRectMake(12, 12, SCREEN_WIDTH - 20, SCREEN_WIDTH / 320 * 20)];
         self.titleLabel.backgroundColor = [UIColor clearColor];
         self.titleLabel.textAlignment = UITextAlignmentLeft;
         self.titleLabel.textColor = [MIUtility colorWithHex:0x333333];
@@ -42,14 +42,14 @@
         priceOris = [NSMutableArray arrayWithCapacity:6];
         temaiImages = [NSMutableArray arrayWithCapacity:6];
         
-        float btnWidth = 91;
-        float btnHeight = 105;
+        float btnWidth = SCREEN_WIDTH / 320 * 91;
+        float btnHeight = SCREEN_WIDTH / 320 * 105;
         for (NSInteger i = 0; i < 2; ++i)
         {
             for (NSInteger j = 0; j < 3; ++j)
             {
                 NSInteger x = 12 + j * (btnWidth + 11.5);
-                UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(x, (btnHeight + 12)*i + 44, btnWidth, btnHeight)];
+                UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(x, (btnHeight + 12) * i + 44, btnWidth, btnHeight)];
                 button.tag = i * 3  + j;
                 button.backgroundColor = [UIColor clearColor];
                 button.showsTouchWhenHighlighted = YES;
@@ -94,10 +94,10 @@
                 [priceOris addObject:priceOriLabel];
             }
         }
-        UIView *bottomLine = [[UIView alloc]initWithFrame:CGRectMake( 0, 277.5, self.viewWidth, 0.5)];
+        UIView *bottomLine = [[UIView alloc]initWithFrame:CGRectMake(0, SCREEN_WIDTH * 320 / 277.5, SCREEN_WIDTH, 0.5)];
         bottomLine.backgroundColor = [MIUtility colorWithHex:0xe4e4e4];
         [self addSubview:bottomLine];
-        UIView *bottomLineView = [[UIView alloc] initWithFrame:CGRectMake(0, bottomLine.bottom, self.viewWidth, 8)];
+        UIView *bottomLineView = [[UIView alloc] initWithFrame:CGRectMake(0, bottomLine.bottom, SCREEN_WIDTH, 8)];
         bottomLineView.backgroundColor = [MIUtility colorWithHex:0xeeeeee];
         [self addSubview:bottomLineView];
     }

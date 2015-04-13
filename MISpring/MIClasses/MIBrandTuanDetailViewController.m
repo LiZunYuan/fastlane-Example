@@ -52,14 +52,14 @@
         // Initialization code
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         
-        itemImageView = [[UIImageView alloc] initWithFrame: CGRectMake(0, 0, SCREEN_WIDTH, 280)];
+        itemImageView = [[UIImageView alloc] initWithFrame: CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH / 320 * 280)];
         itemImageView.userInteractionEnabled = NO;
         itemImageView.clipsToBounds = YES;
         itemImageView.contentMode = UIViewContentModeScaleAspectFill;
         [self addSubview:itemImageView];
         
         
-        itemPriceLabel = [[RTLabel alloc] initWithFrame: CGRectMake(12.5, 280+10, 100, 40)];
+        itemPriceLabel = [[RTLabel alloc] initWithFrame: CGRectMake(12.5, SCREEN_WIDTH / 320 * 280 + 10, 100, 40)];
         itemPriceLabel.backgroundColor = [UIColor clearColor];
         itemPriceLabel.font = [UIFont boldSystemFontOfSize: 28];
         itemPriceLabel.textColor = [MIUtility colorWithHex:0xf73710];
@@ -91,11 +91,11 @@
         itemPostageLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:itemPostageLabel];
         
-        line = [[UIView alloc]initWithFrame:CGRectMake(10, 280+50, self.viewWidth-20, 0.6)];
+        line = [[UIView alloc]initWithFrame:CGRectMake(10, SCREEN_WIDTH / 320 * 280 + 50, SCREEN_WIDTH - 20, 0.6)];
         line.backgroundColor = [MIUtility colorWithHex:0xe5e5e5];
         [self addSubview:line];
         
-        itemTitleLabel = [[RTLabel alloc] initWithFrame:CGRectMake(10, 280+60, SCREEN_WIDTH - 20, MAXFLOAT)];
+        itemTitleLabel = [[RTLabel alloc] initWithFrame:CGRectMake(10, SCREEN_WIDTH / 320 * 280 + 60, SCREEN_WIDTH - 20, MAXFLOAT)];
         itemTitleLabel.backgroundColor = [UIColor clearColor];
         itemTitleLabel.font = [UIFont systemFontOfSize:13.0];
         itemTitleLabel.textColor = [MIUtility colorWithHex:0x333333];
@@ -120,11 +120,11 @@
     if (self) {
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         
-        UIView *line1 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.viewWidth, 0.6)];
+        UIView *line1 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 0.6)];
         line1.backgroundColor = [MIUtility colorWithHex:0xe5e5e5];
         [self addSubview:line1];
         
-        UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, line1.bottom, self.viewWidth, 8)];
+        UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, line1.bottom, SCREEN_WIDTH, 8)];
         lineView.backgroundColor = [MIUtility colorWithHex:0xeeeeee];
         [self addSubview:lineView];
         
@@ -702,14 +702,14 @@ typedef enum {
         self.productItemInfocell.itemTitleLabel.text = original;
     }
     self.productItemInfocell.itemTitleLabel.viewHeight = ceilf(self.productItemInfocell.itemTitleLabel.optimumSize.height);
-    self.productItemInfocell.itemTitleLabel.top = 280 + 60;
+    self.productItemInfocell.itemTitleLabel.top = SCREEN_WIDTH / 320 * 280 + 60;
     
     self.productItemInfocell.itemPriceLabel.text = [NSString stringWithFormat:@"<font size=28.0>￥</font>%@", self.item.price.priceValue];
     CGSize expectedSize = self.productItemInfocell.itemPriceLabel.optimumSize;
     self.productItemInfocell.itemPriceLabel.viewWidth = ceilf(expectedSize.width);
     self.productItemInfocell.itemPriceLabel.viewHeight = ceilf(expectedSize.height);
     
-    self.productItemInfocell.itemPriceOriLabel.left = self.productItemInfocell.itemPriceLabel.right +5;
+    self.productItemInfocell.itemPriceOriLabel.left = self.productItemInfocell.itemPriceLabel.right + 5;
     self.productItemInfocell.itemPriceOriLabel.text = [NSString stringWithFormat:@"￥%@",self.item.priceOri.priceValue];
     CGSize size = [self.productItemInfocell.itemPriceOriLabel.text sizeWithFont:self.productItemInfocell.itemPriceOriLabel.font constrainedToSize:CGSizeMake(200, 20)];
     self.productItemInfocell.itemPriceOriLabel.viewWidth = size.width;
@@ -734,7 +734,7 @@ typedef enum {
     CGSize size2 = [self.productItemInfocell.itemPostageLabel.text sizeWithFont:self.productItemInfocell.itemPostageLabel.font constrainedToSize:CGSizeMake(100, 16)];
     self.productItemInfocell.itemPostageLabel.viewWidth = size2.width + 10;
     self.productItemInfocell.itemPostageLabel.left = self.productItemInfocell.discountLabel.right + 5;
-    self.productItemInfocell.itemPostageLabel.bottom = self.productItemInfocell.itemPriceLabel.bottom -5;
+    self.productItemInfocell.itemPostageLabel.bottom = self.productItemInfocell.itemPriceLabel.bottom - 5;
     self.shuoCell.shuoLabel.text = [[NSString alloc] initWithFormat:@"<font size=12.0 color='#b16f7b'>品牌说：</font>%@", self.brandDes];;
     [self.baseTableView reloadData];
 }
@@ -801,11 +801,11 @@ typedef enum {
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {
-        return ceilf(self.productItemInfocell.itemTitleLabel.optimumSize.height) + 350;
+        return ceilf(self.productItemInfocell.itemTitleLabel.optimumSize.height) + SCREEN_WIDTH / 320 * 280 + 70;
     } else if (indexPath.row == 1){
         return ceilf(self.shuoCell.shuoLabel.optimumSize.height) + 28;
     } else {
-        return 230 + 36 + 50;
+        return SCREEN_WIDTH / 320 * 105 * 2 + 56 + 50;
     }
 }
 

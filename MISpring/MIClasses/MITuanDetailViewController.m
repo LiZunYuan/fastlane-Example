@@ -50,14 +50,14 @@
         // Initialization code
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         
-        itemImageView = [[UIImageView alloc] initWithFrame: CGRectMake(0, 0, SCREEN_WIDTH, 280)];
+        itemImageView = [[UIImageView alloc] initWithFrame: CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH / 320 * 280)];
         itemImageView.userInteractionEnabled = NO;
         itemImageView.clipsToBounds = YES;
         itemImageView.contentMode = UIViewContentModeScaleAspectFill;
         [self addSubview:itemImageView];
         
         itemPriceLabel = [[UILabel alloc] init];
-        itemPriceLabel.frame = CGRectMake(12, 280+16, 100, 28);
+        itemPriceLabel.frame = CGRectMake(12, itemImageView.viewHeight + 16, 100, 28);
         itemPriceLabel.backgroundColor = [UIColor clearColor];
         itemPriceLabel.font = [UIFont boldSystemFontOfSize: 28];
         itemPriceLabel.textColor = [MIUtility colorWithHex:0xff3d00];
@@ -89,11 +89,11 @@
         itemPostageLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:itemPostageLabel];
         
-        line = [[UIView alloc]initWithFrame:CGRectMake(12, 280+60, self.viewWidth-24, 0.5)];
+        line = [[UIView alloc]initWithFrame:CGRectMake(12, SCREEN_WIDTH / 320  * 280 + 60, SCREEN_WIDTH - 24, 0.5)];
         line.backgroundColor = [MIUtility colorWithHex:0xe4e4e4];
         [self addSubview:line];
         
-        itemTitleLabel = [[RTLabel alloc] initWithFrame:CGRectMake(12, 280+60.5+12, SCREEN_WIDTH - 24, MAXFLOAT)];
+        itemTitleLabel = [[RTLabel alloc] initWithFrame:CGRectMake(12, SCREEN_WIDTH / 320 * 280 + 60.5 + 12, SCREEN_WIDTH - 24, MAXFLOAT)];
         itemTitleLabel.backgroundColor = [UIColor clearColor];
         itemTitleLabel.font = [UIFont systemFontOfSize:13.0];
         itemTitleLabel.textColor = [MIUtility colorWithHex:0x333333];
@@ -121,11 +121,11 @@
     if (self) {
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         
-        UIView *line1 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.viewWidth, 0.5)];
+        UIView *line1 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 0.5)];
         line1.backgroundColor = [MIUtility colorWithHex:0xe4e4e4];
         [self addSubview:line1];
         
-        UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, line1.bottom, self.viewWidth, 8)];
+        UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, line1.bottom, SCREEN_WIDTH, 8)];
         lineView.backgroundColor = [MIUtility colorWithHex:0xeeeeee];
         [self addSubview:lineView];
         
@@ -717,7 +717,7 @@ typedef enum {
         self.tuanItemCell.itemTitleLabel.text = original;
     }
     self.tuanItemCell.itemTitleLabel.viewHeight = ceilf(self.tuanItemCell.itemTitleLabel.optimumSize.height);
-    self.tuanItemCell.itemTitleLabel.top = 280 + 60.5 + 12;
+    self.tuanItemCell.itemTitleLabel.top = SCREEN_WIDTH / 320 * 280 + 60.5 + 12;
 
     self.tuanItemCell.itemPriceLabel.text = [NSString stringWithFormat:@"￥%@", self.item.price.priceValue];
 //    CGSize expectedSize = self.tuanItemCell.itemPriceLabel.optimumSize;
@@ -811,11 +811,11 @@ typedef enum {
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {
-        return 369+ceilf(self.tuanItemCell.itemTitleLabel.optimumSize.height);
+        return SCREEN_WIDTH / 320 * 280 + 89 + ceilf(self.tuanItemCell.itemTitleLabel.optimumSize.height);
     } else if (indexPath.row == 1){
         return self.shuoCell.shuoLabel.viewHeight + 58;
     } else {
-        return 286;
+        return 76 + SCREEN_WIDTH / 320 * 105 * 2;
     }
 }
 
