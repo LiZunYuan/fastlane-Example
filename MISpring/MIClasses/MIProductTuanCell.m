@@ -9,6 +9,8 @@
 #import "MIProductTuanCell.h"
 #import "MIBrandTuanDetailViewController.h"
 
+#define ProductCellItemWidth  ((SCREEN_WIDTH - 24) / 2)
+
 @implementation MIBrandItemView
 @synthesize item;
 @synthesize itemImage,selloutImg;
@@ -49,27 +51,27 @@
         description.textAlignment = UITextAlignmentLeft;
         [self addSubview:description];
         
-        rmbLabel = [[UILabel alloc] initWithFrame:CGRectMake(3, 174, 10, 12)];
+        rmbLabel = [[UILabel alloc] initWithFrame:CGRectMake(3, description.bottom + 7, 10, 12)];
         rmbLabel.backgroundColor = [UIColor clearColor];
         rmbLabel.textColor = [MIUtility colorWithHex:0xf73710];
         rmbLabel.font = [UIFont systemFontOfSize:12];
         rmbLabel.text = @"￥";
         [self addSubview:rmbLabel];
         
-        price = [[UILabel alloc] initWithFrame:CGRectMake(15, 170, 80, 20)];
+        price = [[UILabel alloc] initWithFrame:CGRectMake(15, description.bottom + 3, 80, 20)];
         price.backgroundColor = [UIColor clearColor];
         price.textColor = [MIUtility colorWithHex:0xf73710];
         price.font = [UIFont systemFontOfSize: 16];
         [self addSubview:price];
         
-        priceOri = [[MIDeleteUILabel alloc] initWithFrame: CGRectMake(price.right, 172, 80, 15)];
+        priceOri = [[MIDeleteUILabel alloc] initWithFrame: CGRectMake(price.right, description.bottom + 5, 80, 15)];
         priceOri.backgroundColor = [UIColor clearColor];
         priceOri.textColor = [UIColor lightGrayColor];
         priceOri.font = [UIFont systemFontOfSize: 12];
         priceOri.strikeThroughEnabled = YES;
         [self addSubview:priceOri];
         
-        discountLabel = [[UILabel alloc] initWithFrame:CGRectInset(CGRectMake(110, 172, 40, 15), 5, 0)];
+        discountLabel = [[UILabel alloc] initWithFrame:CGRectInset(CGRectMake(110, description.bottom + 5, 40, 15), 5, 0)];
         discountLabel.backgroundColor = [UIColor clearColor];
         discountLabel.font = [UIFont systemFontOfSize:12];
         discountLabel.textColor = [UIColor lightGrayColor];
@@ -105,7 +107,7 @@
     if (self) {
         self.backgroundColor = [UIColor clearColor];
         
-        itemView1 = [[MIBrandItemView alloc] initWithFrame:CGRectMake(8, 8, 148, 193)];
+        itemView1 = [[MIBrandItemView alloc] initWithFrame:CGRectMake(8, 8, ProductCellItemWidth, ProductCellItemWidth + 45)];
         [self addSubview: itemView1];
         
         itemView2 = [[MIBrandItemView alloc] initWithFrame:CGRectMake(itemView1.right + 8, itemView1.top, itemView1.viewWidth, itemView1.viewHeight)];

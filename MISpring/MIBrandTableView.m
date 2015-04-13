@@ -420,7 +420,6 @@
             if (_newItemInteger < 50) {
                 _newItemInteger = (modelArray.count > 50 ? 50 : modelArray.count);
             }
-            _newItemInteger = 10;
         }
     }
 }
@@ -467,13 +466,13 @@
     else
     {
         if (indexPath.row > _newItemInteger ) {
-            return (SCREEN_WIDTH * 148 / 320) + 40 + 8;
+            return   ((SCREEN_WIDTH - 24) / 2) + 40 + 8;
         }
         if (indexPath.row == _newItemInteger) {
             return  40;
         }
         else{
-            return (SCREEN_WIDTH * 150 / 320) + 46.5 + 8;
+            return ((SCREEN_WIDTH - 20) / 2) + 46.5 + 8;
         }
     }
 

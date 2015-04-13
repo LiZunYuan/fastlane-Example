@@ -8,7 +8,7 @@
 
 #import "MIBrandTuanItemCell.h"
 
-#define BrandTuanCellItemWidth  (SCREEN_WIDTH * 148 / 320)
+#define BrandTuanCellItemWidth  ((SCREEN_WIDTH - 24) / 2)
 
 
 @implementation MIBrandTuanItemCell

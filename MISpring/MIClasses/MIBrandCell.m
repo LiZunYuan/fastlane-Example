@@ -8,7 +8,7 @@
 
 #import "MIBrandCell.h"
 
-#define CellItemWidth  (SCREEN_WIDTH * 150 / 320)
+#define CellItemWidth  ((SCREEN_WIDTH - 20) / 2)
 
 @implementation MIBrandCellItemView
 

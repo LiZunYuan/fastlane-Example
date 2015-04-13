@@ -396,7 +396,7 @@
     }
     else//product
     {
-        return 201;
+        return ((SCREEN_WIDTH - 24) / 2) + 53;
     }
 }
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
