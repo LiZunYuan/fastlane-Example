@@ -36,7 +36,7 @@
     [self.navigationBar setBarLeftButtonItem:self selector:@selector(closeModalViewController:) imageKey:@"navigationbar_btn_close"];
     
     shareBackgroundView = [[UIView alloc] initWithFrame:CGRectMake(5, itemMarginHeight + self.navigationBarHeight,
-                                                                   310, self.view.viewHeight - keyBoardDefaultHeight - itemMarginHeight*2 - 45)];
+                                                                   SCREEN_WIDTH - 10, self.view.viewHeight - keyBoardDefaultHeight - itemMarginHeight*2 - 45)];
     shareBackgroundView.backgroundColor = [UIColor whiteColor];
     shareBackgroundView.layer.cornerRadius = 5.0;
     shareBackgroundView.layer.shadowColor = [UIColor blackColor].CGColor;
@@ -57,18 +57,18 @@
     
     itemViewBackground = [[UIView alloc] initWithFrame:CGRectMake(0,
                                                                   shareBackgroundView.viewHeight - itemBackgroundHeight,
-                                                                  310, itemBackgroundHeight)];
+                                                                  310 * SCREEN_WIDTH / 320.0, itemBackgroundHeight)];
     itemViewBackground.backgroundColor = [UIColor clearColor];
     [shareBackgroundView addSubview:itemViewBackground];
     
-    captionLimitLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 290, 15)];
+    captionLimitLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, shareBackgroundView.viewWidth - 20, 15)];
     captionLimitLabel.backgroundColor = [UIColor whiteColor];
     captionLimitLabel.font = [UIFont systemFontOfSize:12];
     captionLimitLabel.textColor = [MIUtility colorWithHex:0x666666];
     captionLimitLabel.textAlignment = UITextAlignmentRight;
     [itemViewBackground addSubview:captionLimitLabel];
     
-    UIView *splitLineView = [[UIView alloc] initWithFrame:CGRectMake(0, 15, 310, 1)];
+    UIView *splitLineView = [[UIView alloc] initWithFrame:CGRectMake(0, 15, shareBackgroundView.viewWidth, 1)];
     splitLineView.backgroundColor = [MIUtility colorWithHex:0xf1f1f1];
     [itemViewBackground addSubview:splitLineView];
     
@@ -78,21 +78,21 @@
     itemImageView.layer.cornerRadius = 3.0;
     [itemViewBackground addSubview:itemImageView];
     
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame: CGRectMake(70, 20, 235, 20)];
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame: CGRectMake(70, 20, shareBackgroundView.viewWidth - 70 - 10, 20)];
     titleLabel.backgroundColor = [UIColor clearColor];
     titleLabel.textAlignment = UITextAlignmentLeft;
     titleLabel.font = [UIFont fontWithName:@"Arial" size:13];
     titleLabel.text = itemTitle;
     [itemViewBackground addSubview:titleLabel];
     
-    UILabel *urlLabel = [[UILabel alloc] initWithFrame:CGRectMake(70, 35, 235, 20)];
+    UILabel *urlLabel = [[UILabel alloc] initWithFrame:CGRectMake(70, 35, shareBackgroundView.viewWidth - 70 - 10, 20)];
     urlLabel.backgroundColor = [UIColor clearColor];
     urlLabel.textColor = [UIColor darkGrayColor];
     urlLabel.font = [UIFont fontWithName:@"Arial" size:12];
     urlLabel.text = itemUrl;
     [itemViewBackground addSubview:urlLabel];
     
-    UILabel *sourceLabel = [[UILabel alloc] initWithFrame:CGRectMake(70, 55, 235, 20)];
+    UILabel *sourceLabel = [[UILabel alloc] initWithFrame:CGRectMake(70, 55, shareBackgroundView.viewWidth - 70 - 10, 20)];
     sourceLabel.backgroundColor = [UIColor clearColor];
     sourceLabel.font = [UIFont fontWithName:@"Arial" size:12];
     sourceLabel.text = @"来自米折";
@@ -209,7 +209,7 @@
 
 -(void)keyboardDidHide:(NSNotification *)notification{
     shareBackgroundView.frame = CGRectMake(5, itemMarginHeight + self.navigationBarHeight,
-                                           310, self.view.viewHeight - keyBoardDefaultHeight - itemMarginHeight*2 - self.navigationBarHeight);
+                                           SCREEN_WIDTH - 10, self.view.viewHeight - keyBoardDefaultHeight - itemMarginHeight*2 - self.navigationBarHeight);
     CGRect statusFrame = CGRectMake(0, 5,
                                     shareBackgroundView.viewWidth,
                                     shareBackgroundView.viewHeight - itemBackgroundHeight - 2*5);
@@ -219,7 +219,7 @@
 
     itemViewBackground.frame = CGRectMake(0,
                                           shareBackgroundView.viewHeight - itemBackgroundHeight,
-                                          310, itemBackgroundHeight);
+                                          SCREEN_WIDTH - 10, itemBackgroundHeight);
 }
 
 -(void)keyboardDidShow:(NSNotification *)notification{
@@ -227,7 +227,7 @@
     NSValue* kbFrameValue = [info valueForKey:UIKeyboardFrameEndUserInfoKey];
 
     shareBackgroundView.frame = CGRectMake(5, itemMarginHeight + self.navigationBarHeight,
-                                           310, self.view.viewHeight - [kbFrameValue CGRectValue].size.height - itemMarginHeight*2 - self.navigationBarHeight);
+                                           SCREEN_WIDTH - 10, self.view.viewHeight - [kbFrameValue CGRectValue].size.height - itemMarginHeight*2 - self.navigationBarHeight);
     CGRect statusFrame = CGRectMake(0, 5,
                                     shareBackgroundView.viewWidth,
                                     shareBackgroundView.viewHeight - itemBackgroundHeight - 2*5);
@@ -237,7 +237,7 @@
     
     itemViewBackground.frame = CGRectMake(0,
                                           shareBackgroundView.viewHeight - itemBackgroundHeight,
-                                          310, itemBackgroundHeight);
+                                          SCREEN_WIDTH - 10, itemBackgroundHeight);
 }
 
 #pragma mark - UITextView Delegate
