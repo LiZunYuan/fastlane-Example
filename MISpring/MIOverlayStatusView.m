@@ -129,7 +129,7 @@
         _label.backgroundColor = [UIColor clearColor];
         _label.font = [UIFont systemFontOfSize:14.0];
         _label.adjustsFontSizeToFitWidth = YES;
-        _label.minimumFontSize = 10.0;
+        _label.minimumScaleFactor = 10 / [UIFont labelFontSize];
         _label.numberOfLines = 0;
         _label.textAlignment = NSTextAlignmentCenter;
         _label.textColor = [UIColor grayColor];

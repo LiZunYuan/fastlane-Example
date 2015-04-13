@@ -162,7 +162,8 @@
 		badgeView_ = [[DDBadgeView alloc] initWithFrame:self.contentView.bounds cell:self];
         badgeView_.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         badgeView_.contentMode = UIViewContentModeRedraw;
-		badgeView_.contentStretch = CGRectMake(1., 0., 0., 0.);
+//		badgeView_.contentStretch = CGRectMake(1., 0., 0., 0.);
+        
         [self.contentView addSubview:badgeView_];
         
     }

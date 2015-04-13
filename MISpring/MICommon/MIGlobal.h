@@ -31,6 +31,14 @@
 #import "MIRegisterViewController.h"
 #import "MISettingViewController.h"
 
+#ifdef __IPHONE_6_0 // iOS6 and later
+#   define UITextAlignmentCenter    NSTextAlignmentCenter
+#   define UITextAlignmentLeft      NSTextAlignmentLeft
+#   define UITextAlignmentRight     NSTextAlignmentRight
+#   define UILineBreakModeTailTruncation     NSLineBreakByTruncatingTail
+#   define UILineBreakModeMiddleTruncation   NSLineBreakByTruncatingMiddle
+#endif
+
 #define MIAPP_UPDATE_ALERT_MAXCOUNT       5       //版本更新提醒
 #define MIAPP_GRADE_ALERT_MAXCOUNT        3       //版本评分提醒
 #define MIAPP_ACTIVITY_INDICATOR_VIEW_TAG 999     //活动指示器的标签

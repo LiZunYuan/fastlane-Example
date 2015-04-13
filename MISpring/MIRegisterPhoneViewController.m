@@ -165,7 +165,9 @@
 {
     MIRegisterViewController *controller = [[MIRegisterViewController alloc] init];
     controller.delegate = self;
-    [self presentModalViewController:controller animated:YES];
+    [self presentViewController:controller animated:YES completion:^{
+        
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated

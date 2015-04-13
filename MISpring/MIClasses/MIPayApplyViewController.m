@@ -179,8 +179,7 @@
     
     NSString *forgetPassword = @"忘记密码？";
     CGSize labelSize = [forgetPassword sizeWithFont:[UIFont systemFontOfSize:12.0f]
-                                  constrainedToSize:CGSizeMake(SCREEN_WIDTH - 20, 14)
-                                      lineBreakMode:UILineBreakModeCharacterWrap];
+                                  constrainedToSize:CGSizeMake(SCREEN_WIDTH - 20, 14)];
     UILabel *forgetPWD = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 20 - labelSize.width, 80 + self.navigationBarHeight, labelSize.width + 12, 16)];
     forgetPWD.centerY = pwdView.viewHeight / 2;
     forgetPWD.backgroundColor = [UIColor clearColor];

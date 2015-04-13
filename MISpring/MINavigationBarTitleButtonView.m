@@ -43,7 +43,7 @@
 {
     self.titleLabel.text = title;
     self.titleLabel.font = [UIFont systemFontOfSize:size];
-    self.titleLabel.minimumFontSize = (size - 2);
+    self.titleLabel.minimumScaleFactor = (size - 2) / [UIFont labelFontSize];
     CGFloat width = [title sizeWithFont:[UIFont systemFontOfSize:size]].width;
     self.titleLabel.viewWidth = width;
     self.titleLabel.centerX = self.viewWidth / 2;

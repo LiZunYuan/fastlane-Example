@@ -45,7 +45,7 @@
         [itemImage addSubview:indicatorView];
         
         description = [[UILabel alloc] initWithFrame:CGRectMake(5, itemImage.bottom + 8, self.viewWidth-10, 11)];
-        description.lineBreakMode = UILineBreakModeWordWrap|UILineBreakModeClip;
+//        description.lineBreakMode = UILineBreakModeWordWrap|UILineBreakModeClip;
         description.font = [UIFont systemFontOfSize:11];
         description.textColor = [UIColor darkGrayColor];
         description.textAlignment = UITextAlignmentLeft;

@@ -65,7 +65,6 @@
         
         contentLabel = [[RTLabel alloc] initWithFrame:CGRectMake(5, 50, SCREEN_WIDTH - 30, 25)];
         contentLabel.backgroundColor = [UIColor clearColor];
-        contentLabel.lineBreakMode = UILineBreakModeWordWrap;
         contentLabel.font = [UIFont systemFontOfSize:16];
         [backgroundView addSubview:contentLabel];
         
@@ -81,7 +80,6 @@
         
         itemTitle = [[UILabel alloc] initWithFrame:CGRectMake(90, 15, 195, 50)];
         itemTitle.backgroundColor = [UIColor clearColor];
-        itemTitle.lineBreakMode = UILineBreakModeWordWrap;
         itemTitle.numberOfLines = 0;
         itemTitle.font = [UIFont systemFontOfSize:14.0];
         itemTitle.textColor = [UIColor grayColor];
@@ -327,7 +325,7 @@
     } else if(self.commentsArray.count > indexPath.row){
         MIMsgCommentModel *commentModel = [self.commentsArray objectAtIndex:indexPath.row];
         NSString *content = commentModel.comment;
-        CGSize size = [content sizeWithFont:[UIFont systemFontOfSize:16] constrainedToSize:CGSizeMake(290, MAXFLOAT) lineBreakMode:UILineBreakModeWordWrap];
+        CGSize size = [content sizeWithFont:[UIFont systemFontOfSize:16] constrainedToSize:CGSizeMake(290, MAXFLOAT)];
         commentModel.commentHeight = @(size.height);
         return (size.height > 0 ? size.height : 20) + 170;
     }else{

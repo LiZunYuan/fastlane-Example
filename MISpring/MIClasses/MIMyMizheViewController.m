@@ -131,7 +131,7 @@
     _usernameLabel.backgroundColor = [UIColor clearColor];
     _usernameLabel.font = [UIFont systemFontOfSize: 16];
     _usernameLabel.adjustsFontSizeToFitWidth = YES;
-    _usernameLabel.minimumFontSize = 14;
+    _usernameLabel.minimumScaleFactor = 14 / [UIFont labelFontSize];
     _usernameLabel.textColor = [UIColor whiteColor];
     [_usernameLabel setShadowColor: [UIColor colorWithWhite: 0.3 alpha: 0.65]];
     [_usernameLabel setShadowOffset: CGSizeMake(0.7, 0.7)];
@@ -146,7 +146,7 @@
     _accountLabel.backgroundColor = [UIColor clearColor];
     _accountLabel.font = [UIFont systemFontOfSize:14];
     _accountLabel.adjustsFontSizeToFitWidth = YES;
-    _accountLabel.minimumFontSize = 12;
+    _accountLabel.minimumScaleFactor = 12 / [UIFont labelFontSize];
     _accountLabel.textColor = [UIColor whiteColor];
     [_accountLabel setShadowColor: [UIColor colorWithWhite: 0.3 alpha: 0.65]];
     [_accountLabel setShadowOffset: CGSizeMake(0.7, 0.7)];

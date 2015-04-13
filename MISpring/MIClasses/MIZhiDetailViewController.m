@@ -49,7 +49,7 @@
 
         titleLabel = [[RTLabel alloc] initWithFrame: CGRectMake(85, 10, 225, 60)];
         titleLabel.backgroundColor = [UIColor clearColor];
-        titleLabel.lineBreakMode = UILineBreakModeCharacterWrap;
+//        titleLabel.lineBreakMode = UILineBreakModeCharacterWrap;
         titleLabel.font = [UIFont systemFontOfSize: 14];
         [self addSubview:titleLabel];
         
@@ -169,7 +169,7 @@
         
         contentLabel = [[RTLabel alloc] initWithFrame:CGRectMake(50, 30, 260, 20)];
         contentLabel.backgroundColor = [UIColor clearColor];
-        contentLabel.lineBreakMode = UILineBreakModeWordWrap;
+//        contentLabel.lineBreakMode = UILineBreakModeWordWrap;
         contentLabel.font = [UIFont systemFontOfSize:12];
         contentLabel.textColor = [UIColor darkGrayColor];
         [self addSubview:contentLabel];
@@ -838,7 +838,7 @@
             {
                 content = [[NSString alloc] initWithFormat:@"@%@ %@", commentModel.toNick, commentModel.comment]; 
             }
-            CGSize size = [content sizeWithFont:[UIFont systemFontOfSize:12] constrainedToSize:CGSizeMake(260, MAXFLOAT) lineBreakMode:UILineBreakModeWordWrap];
+            CGSize size = [content sizeWithFont:[UIFont systemFontOfSize:12] constrainedToSize:CGSizeMake(260, MAXFLOAT)];
             commentModel.commentHeight = @(size.height);
             return (size.height > 0 ? size.height : 15) + 40;
         }

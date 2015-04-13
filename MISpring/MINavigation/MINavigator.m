@@ -188,13 +188,17 @@ static MINavigator *instance = nil;
 - (BOOL)popToRootViewControllerWithAnimated:(BOOL)animated{
     UINavigationController *navigationController = self.navigationController;
     
-    UIViewController* modalVC = [navigationController modalViewController];
+    UIViewController* modalVC = [navigationController presentedViewController];
     NSUInteger viewCount = [navigationController.viewControllers count];
     if (modalVC != nil) {
         if (viewCount > 1) {
-            [navigationController dismissModalViewControllerAnimated:NO];
+            [navigationController dismissViewControllerAnimated:NO completion:^{
+                
+            }];
         } else {
-            [navigationController dismissModalViewControllerAnimated:animated];
+            [navigationController dismissViewControllerAnimated:animated completion:^{
+                
+            }];
         }
     }
     

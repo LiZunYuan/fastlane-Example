@@ -219,7 +219,9 @@ static MIUpYun *_upYunInstance = nil;
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
-    [picker dismissModalViewControllerAnimated:YES];
+    [picker dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
 
 
