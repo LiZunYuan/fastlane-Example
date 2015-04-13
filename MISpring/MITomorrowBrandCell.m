@@ -16,7 +16,7 @@
 -(id)initWithReuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
     if (self) {
-        itemView1 = [[MITomorrowBrandItemView alloc] initWithFrame:CGRectMake(8, 8, 148, 206)];
+        itemView1 = [[MITomorrowBrandItemView alloc] initWithFrame:CGRectMake(8, 8, (SCREEN_WIDTH - 24) / 2, 206)];
         [self addSubview: itemView1];
         
         itemView2 = [[MITomorrowBrandItemView alloc] initWithFrame:CGRectMake(itemView1.right + 8, itemView1.top, itemView1.viewWidth, itemView1.viewHeight)];

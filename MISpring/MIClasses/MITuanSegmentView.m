@@ -8,7 +8,7 @@
 
 #import "MITuanSegmentView.h"
 #define   OffsetX   5.0
-#define ButtonWidth    100.0
+#define ButtonWidth    (100.0 * SCREEN_WIDTH/320.0)
 
 @implementation MITuanSegmentView
 
