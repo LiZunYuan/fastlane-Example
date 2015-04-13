@@ -28,7 +28,7 @@
             _readerView.frame = self.view.frame;
             _readerView.readerDelegate = self;
             
-            CGRect scanCropRect = CGRectMake(0, self.view.centerY - 280/2, 320, 280);
+            CGRect scanCropRect = CGRectMake(0, self.view.centerY - SCREEN_WIDTH*7/8/2.0, SCREEN_WIDTH, SCREEN_WIDTH*7/8/2.0);
             _readerView.scanCrop = [self getCropRect:scanCropRect inFrame:self.view.frame];
             _readerView.torchMode = NO;
             [self.view addSubview:_readerView];
@@ -43,7 +43,7 @@
     UIImageView * centerView = [[UIImageView alloc]init];
     centerView.image = [UIImage imageNamed:@"richscan_bg"];
     centerView.center = CGPointMake(self.view.centerX, self.view.centerY - 20);
-    centerView.bounds = CGRectMake(0, 0, 195, 195);
+    centerView.bounds = CGRectMake(0, 0, SCREEN_WIDTH*2/3.0, SCREEN_WIDTH*2/3.0);
     [self.view addSubview:centerView];
     
     UIView *bg1 = [[UIView alloc] init];
@@ -120,7 +120,7 @@
     _shadowView.alpha = 0;
     
     _tipBg = [[UIView alloc]init];
-    _tipBg.bounds = CGRectMake(0, 0, 264, 248);
+    _tipBg.bounds = CGRectMake(0, 0, 264*SCREEN_WIDTH/320.0, 248*SCREEN_WIDTH/320.0);
     _tipBg.centerX = self.view.centerX;
     _tipBg.top = title.bottom;
     _tipBg.backgroundColor = [UIColor whiteColor];
@@ -130,13 +130,13 @@
     
     UIButton *closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [closeBtn setBackgroundImage:[UIImage imageNamed:@"ic_qr_close"] forState:UIControlStateNormal];
-    closeBtn.frame = CGRectMake(self.view.centerX + _tipBg.viewWidth/2.0 - 35 - 28 , 5, 30, 30);
+    closeBtn.frame = CGRectMake(self.view.centerX + _tipBg.viewWidth/2.0 - 35 - 28*SCREEN_WIDTH/320.0 , 5, 30, 30);
     closeBtn.backgroundColor = [UIColor clearColor];
     [closeBtn addTarget:self action:@selector(closeTips) forControlEvents:UIControlEventTouchUpInside];
     [_tipBg addSubview:closeBtn];
     
     UIImageView *tipsImg = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"qr_tips_img"]];
-    tipsImg.bounds = CGRectMake(0, 0, 150, 150);
+    tipsImg.bounds = CGRectMake(0, 0, 150*SCREEN_WIDTH/320.0, 150*SCREEN_WIDTH/320.0);
     tipsImg.centerY = 100;
     tipsImg.centerX = _tipBg.viewWidth/2.0;
     [_tipBg addSubview:tipsImg];
@@ -144,9 +144,9 @@
     UILabel *scanTip = [[UILabel alloc]init];
     scanTip.backgroundColor = [UIColor clearColor];
     scanTip.textColor = [MIUtility colorWithHex:0x333333];
-    scanTip.bounds = CGRectMake(0, 0, 240, 40);
+    scanTip.bounds = CGRectMake(0, 0, 240*SCREEN_WIDTH/320.0, 40);
     scanTip.centerX = _tipBg.viewWidth/2.0;
-    scanTip.centerY = tipsImg.bottom + 15 + 10;
+    scanTip.centerY = tipsImg.bottom + (15 + 10)*SCREEN_WIDTH/320.0;
     scanTip.numberOfLines = 2;
     scanTip.textAlignment = NSTextAlignmentCenter;
     scanTip.text = @"在米折网明日预告中，点击开抢提醒扫描二维码，把喜欢的东东装进口袋";

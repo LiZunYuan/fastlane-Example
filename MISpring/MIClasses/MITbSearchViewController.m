@@ -106,7 +106,7 @@
     [self.view addSubview:_bgView];
     
     _rebate = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"img_search_fanli"]];
-    _rebate.frame = CGRectMake(10, 15 , PHONE_SCREEN_SIZE.width - 20, 120);
+    _rebate.frame = CGRectMake((SCREEN_WIDTH - 300) / 2.0, 15 , 300, 120);
     [_bgView addSubview:_rebate];
     
     UIButton *howToCopy = [UIButton buttonWithType:UIButtonTypeCustom];
