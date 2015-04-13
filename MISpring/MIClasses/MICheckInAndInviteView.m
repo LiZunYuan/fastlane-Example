@@ -17,11 +17,11 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        UIButton *checkinBtn = [self buttonWithFrame:CGRectMake(0, 0, 160, self.viewHeight)];
+        UIButton *checkinBtn = [self buttonWithFrame:CGRectMake(0, 0, SCREEN_WIDTH/2.0, self.viewHeight)];
         [checkinBtn addTarget:self action:@selector(goCheckin) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:checkinBtn];
         
-        UIButton *inviteFriendsBtn = [self buttonWithFrame:CGRectMake(160, 0, 160, self.viewHeight)];
+        UIButton *inviteFriendsBtn = [self buttonWithFrame:CGRectMake(SCREEN_WIDTH/2.0, 0, SCREEN_WIDTH/2.0, self.viewHeight)];
         [inviteFriendsBtn addTarget:self action:@selector(goInviteFriends) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:inviteFriendsBtn];
         

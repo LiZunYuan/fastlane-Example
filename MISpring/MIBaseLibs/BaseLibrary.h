@@ -29,3 +29,6 @@
 
 //JSBadgeView
 #import "JSBadgeView.h"
+
+//Masonry
+#import "Masonry.h"

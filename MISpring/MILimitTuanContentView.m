@@ -30,8 +30,13 @@
         
         _tuanView = [[[NSBundle mainBundle] loadNibNamed:@"MILimitTuanView" owner:self options:nil] objectAtIndex:0];
         _tuanView.backgroundColor = [UIColor whiteColor];
-        _tuanView.frame = CGRectMake(0, _titleLabel.bottom, self.viewWidth, 100);
         [self addSubview:_tuanView];
+        [_tuanView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(self);
+            make.top.equalTo(_titleLabel.mas_bottom);
+            make.width.equalTo(self.mas_width);
+            make.height.equalTo(@100);
+        }];
     }
     return self;
 }

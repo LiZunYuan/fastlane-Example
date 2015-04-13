@@ -68,7 +68,7 @@
     [self.view addSubview:bottomView];
     
     loginOutButton = [[MICommonButton alloc] initWithFrame:CGRectMake(0, 0, 300.0, 36)];
-    loginOutButton.center = CGPointMake(160, 25);
+    loginOutButton.center = CGPointMake(SCREEN_WIDTH/2.0, 25);
     [loginOutButton addTarget:self action:@selector(logoutButtonTouched:) forControlEvents:UIControlEventTouchUpInside];
     [bottomView addSubview:loginOutButton];
     
