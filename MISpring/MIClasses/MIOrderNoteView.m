@@ -51,6 +51,7 @@
 - (void) buildNoteButton
 {
     _noteButton = [[MICommonButton alloc] initWithFrame:CGRectMake(20, _noteTile.bottom + 10, 280, 36)];
+    _noteButton.centerX = SCREEN_WIDTH / 2;
     [self addSubview:_noteButton];
 }
 

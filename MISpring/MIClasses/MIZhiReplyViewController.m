@@ -56,7 +56,7 @@
     [self.navigationBar setBarRightTextButtonItem:self selector:@selector(goToSend:) title:@"发送"];
     [self.navigationBar setBarLeftButtonItem:self selector:@selector(closeModalViewController:) imageKey:@"navigationbar_btn_close"];
     
-    commentBackgroundView = [[UIView alloc] initWithFrame:CGRectMake(5, itemMarginHeight + self.navigationBarHeight, 310, self.view.viewHeight - keyBoardDefaultHeight - itemMarginHeight*2 - self.navigationBarHeight)];
+    commentBackgroundView = [[UIView alloc] initWithFrame:CGRectMake(5, itemMarginHeight + self.navigationBarHeight, SCREEN_WIDTH - 10, self.view.viewHeight - keyBoardDefaultHeight - itemMarginHeight*2 - self.navigationBarHeight)];
     commentBackgroundView.backgroundColor = [UIColor whiteColor];
     commentBackgroundView.layer.cornerRadius = 5.0;
     commentBackgroundView.layer.shadowColor = [UIColor blackColor].CGColor;

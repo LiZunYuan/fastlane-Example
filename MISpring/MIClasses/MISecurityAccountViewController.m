@@ -33,18 +33,18 @@
         _headImageView = [[UIImageView alloc] initWithFrame:CGRectMake(7.5, 12.5, 15, 15)];
         [self addSubview:self.headImageView];
 
-        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 10, 304 - 80, 20)];
+        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 10, SCREEN_WIDTH - 16 - 80, 20)];
         self.titleLabel.backgroundColor = [UIColor clearColor];
         self.titleLabel.font = [UIFont boldSystemFontOfSize:14];
         [self addSubview:self.titleLabel];
         
-        _detailLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 30, 304 - 40, 20)];
+        _detailLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 30, SCREEN_WIDTH - 16 - 40, 20)];
         self.detailLabel.backgroundColor = [UIColor clearColor];
         self.detailLabel.textColor = [UIColor grayColor];
         self.detailLabel.font = [UIFont boldSystemFontOfSize:12];
         [self addSubview:self.detailLabel];
         
-        _bindingLabel = [[UILabel alloc] initWithFrame:CGRectMake(295 - 60, 10, 60, 20)];
+        _bindingLabel = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 25 - 60, 10, 60, 20)];
         self.bindingLabel.backgroundColor = [UIColor clearColor];
         self.bindingLabel.text = @"去绑定";
         self.bindingLabel.textColor = [UIColor redColor];
@@ -52,7 +52,7 @@
         self.bindingLabel.textAlignment = UITextAlignmentRight;
         [self addSubview:self.bindingLabel];
         
-        UIImageView *lineView = [[UIImageView alloc] initWithFrame:CGRectMake(5, 59, 304 - 10, 1)];
+        UIImageView *lineView = [[UIImageView alloc] initWithFrame:CGRectMake(5, 59, SCREEN_WIDTH - 16 - 10, 1)];
         lineView.image = [[UIImage imageNamed:@"ic_line"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
         [self addSubview:lineView];
     }
@@ -96,7 +96,7 @@
 	// Do any additional setup after loading the view.
     [self.navigationBar setBarTitle:@"安全检测"];
     
-    headView = [[UIView alloc] initWithFrame:CGRectMake(8, self.navigationBarHeight + 10, 304, 60)];
+    headView = [[UIView alloc] initWithFrame:CGRectMake(8, self.navigationBarHeight + 10, SCREEN_WIDTH - 16, 60)];
     headView.backgroundColor = [UIColor blackColor];
     headView.alpha = 0.7;
     headView.layer.cornerRadius = 3;
@@ -113,7 +113,7 @@
     [headView addSubview:self.remindLabel];
     [self.view addSubview:headView];
     
-    contentview = [[UIView alloc] initWithFrame:CGRectMake(8, headView.bottom + 10, 304, self.view.viewHeight - (headView.bottom + 10) - 10)];
+    contentview = [[UIView alloc] initWithFrame:CGRectMake(8, headView.bottom + 8, SCREEN_WIDTH - 16, self.view.viewHeight - (headView.bottom + 8) - 8)];
     contentview.backgroundColor = [UIColor whiteColor];
     contentview.hidden = YES;
     [self.view addSubview:contentview];
