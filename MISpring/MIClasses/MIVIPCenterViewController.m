@@ -43,7 +43,7 @@
         rebatePersentLabel.font = [UIFont systemFontOfSize:12];
         [self addSubview:rebatePersentLabel];
         
-        statusLabel = [[UILabel alloc] initWithFrame:CGRectMake(220, 5, 60, 25)];
+        statusLabel = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 80 - 20, 5, 60, 25)];
         statusLabel.layer.cornerRadius = 2;
         statusLabel.layer.masksToBounds = YES;
         statusLabel.textAlignment = NSTextAlignmentCenter;
@@ -221,7 +221,7 @@
     titleLabel.font = [UIFont boldSystemFontOfSize:18];
     [self.firstView addSubview:titleLabel];
     
-    UIImageView *vipGradeLineImageView = [[UIImageView alloc] initWithFrame:CGRectMake(25, 60, 250, 8)];
+    UIImageView *vipGradeLineImageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 60, _firstView.viewWidth - 20 * 2, 8)];
     vipGradeLineImageView.image = [UIImage imageNamed:@"ic_vip_level_indicator"];
     [self.firstView addSubview:vipGradeLineImageView];
     
@@ -242,7 +242,7 @@
     
     for (NSInteger i = 0; i < 6; i++)
     {
-        UILabel *persentRebateLabel = [[UILabel alloc] initWithFrame:CGRectMake(15 + 49 * i, 80, 40, 12)];
+        UILabel *persentRebateLabel = [[UILabel alloc] initWithFrame:CGRectMake(12 + (vipGradeLineImageView.viewWidth / 5.0 - 3) * i, 80, 40, 12)];
         persentRebateLabel.backgroundColor = [UIColor clearColor];
         persentRebateLabel.tag = 100+i;
         persentRebateLabel.textColor = [UIColor grayColor];
@@ -254,7 +254,7 @@
     lineView.backgroundColor = [UIColor colorWithWhite:0.3 alpha:0.15];
     [self.firstView addSubview:lineView];
     
-    UILabel *currentGradeLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 115, 60, 15)];
+    UILabel *currentGradeLabel = [[UILabel alloc] initWithFrame:CGRectMake(v0ImageView.left, 115, 60, 15)];
     currentGradeLabel.backgroundColor = [UIColor clearColor];
     currentGradeLabel.text = @"当前等级：";
     currentGradeLabel.textColor = [UIColor grayColor];
