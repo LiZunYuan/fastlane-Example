@@ -59,6 +59,7 @@ typedef enum MIOverlayStatus {
 @property (nonatomic, strong) MICustomNavigationBar *navigationBar;
 @property (nonatomic, strong) EGORefreshTableHeaderView *refreshTableView;
 @property (nonatomic, assign) BOOL hasStatusBarHotSpot;
+@property (nonatomic, assign) BOOL needRelayoutSelfView;
 
 // 状态栏高度变化
 - (void)handleUIApplicationWillChangeStatusBarFrameNotification:(NSNotification*)notification;

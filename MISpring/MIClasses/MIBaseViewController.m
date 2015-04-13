@@ -122,6 +122,12 @@
     }
 }
 
+- (void) viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillChangeStatusBarFrameNotification object:nil];
+}
+
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
@@ -145,7 +151,13 @@
 - (void)relayoutView
 {
     self.hasStatusBarHotSpot = IS_HOTSPOT_ON;
-    
+    CGFloat offset = HOTSPOT_STATUSBAR_HEIGHT;
+    if (IS_HOTSPOT_ON) {
+        offset = - HOTSPOT_STATUSBAR_HEIGHT;
+    }
+    if (self.needRelayoutSelfView) {
+        self.view.viewHeight += offset;
+    }
     // 子类去做重新布局
 }
 

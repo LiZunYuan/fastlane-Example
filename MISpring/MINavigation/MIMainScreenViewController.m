@@ -50,6 +50,8 @@
         
         self.currentViewControllerIndex = index;
         _currentViewController = [self.childViewControllers objectAtIndex:index];
+        
+        [self resetRelayoutViewControllers];
     }
     
     return self;
@@ -77,6 +79,14 @@
     self.tabBar.currentTabIndex = _currentViewControllerIndex;
     self.tabBar.frame = CGRectMake(0, self.view.viewHeight - TABBAR_HEIGHT, self.tabBar.selfSize.width, self.tabBar.selfSize.height);
     [self.view addSubview:self.tabBar];
+}
+
+- (void)resetRelayoutViewControllers {
+    for (MIBaseViewController *vc in self.childViewControllers) {
+        vc.needRelayoutSelfView = YES;
+    }
+    
+    _currentViewController.needRelayoutSelfView = NO;
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -228,6 +238,7 @@
          _transiting = NO;
         _currentViewController = newViewController;
         self.currentViewControllerIndex = index;
+        [self resetRelayoutViewControllers];
         [self showNotifyAndGradeView:index];
         if (IOS_VERSION >= 7.0) {
             [self setNeedsStatusBarAppearanceUpdate];
