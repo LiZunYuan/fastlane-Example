@@ -13,7 +13,7 @@
 #import "MIListTableViewController.h"
 #define SCROLL_VIEW_HEIGHT  124
 #define NOMAL_SPACE                 8
-#define IMAGEVIEW_WIDTH           280
+#define IMAGEVIEW_WIDTH           SCREEN_WIDTH * 280 / 320
 #define SCROLL_VIEW_WIDTH          (NOMAL_SPACE + IMAGEVIEW_WIDTH)
 #define RECOMMEND_VIEW_WIDTH    (SCREEN_WIDTH / 3.0)
 #define RECOMMEND_IMG_HEIGHT    (SCREEN_WIDTH * 87 / 320.0)
@@ -165,7 +165,7 @@
             MIHotRecommendView *view = [[[NSBundle mainBundle] loadNibNamed:@"MIHotRecommendView" owner:self options:nil] objectAtIndex:0];
             view.userInteractionEnabled = YES;
             view.clipsToBounds = YES;
-            view.frame = CGRectMake(SCROLL_VIEW_WIDTH *i, 0, 280, 123);
+            view.frame = CGRectMake(SCROLL_VIEW_WIDTH *i, 0, IMAGEVIEW_WIDTH, 123);
             [_tuanHeaderScroll addSubview:view];
             view.layer.cornerRadius = 3;
             view.layer.borderWidth = 1;

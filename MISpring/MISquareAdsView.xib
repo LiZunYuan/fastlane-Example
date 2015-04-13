@@ -58,7 +58,7 @@
                 <outlet property="squareRightBottomImageView" destination="3Ek-Uv-m9A" id="3Qz-pn-1P9"/>
                 <outlet property="squareRightTopImageView" destination="FyL-sU-uAh" id="dHe-eI-NZw"/>
             </connections>
-            <point key="canvasLocation" x="293" y="253"/>
+            <point key="canvasLocation" x="151" y="249"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

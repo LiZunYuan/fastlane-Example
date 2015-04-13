@@ -19,7 +19,7 @@
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         self.backgroundColor = [UIColor clearColor];
         
-        _itemView1 = [[MIFavorDoubleItem alloc] initWithFrame:CGRectMake(8, 4, (self.viewWidth - 24) / 2, 196)];
+        _itemView1 = [[MIFavorDoubleItem alloc] initWithFrame:CGRectMake(8, 8, (SCREEN_WIDTH - 24) / 2, (SCREEN_WIDTH - 24) / 2 + 48)];
         [self addSubview: _itemView1];
         
         _itemView2 = [[MIFavorDoubleItem alloc] initWithFrame:CGRectMake(_itemView1.right + 8, _itemView1.top, _itemView1.viewWidth, _itemView1.viewHeight)];

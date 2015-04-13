@@ -19,7 +19,8 @@
     self.titleLabel.text = [desc stringByReplacingOccurrencesOfString:@"】" withString:@"]"];
     self.titleLabel.textColor = [MIUtility colorWithHex:0x666666];
     self.titleLabel.font = [UIFont systemFontOfSize:14];
-    self.titleLabel.numberOfLines = 2;
+//    self.titleLabel.numberOfLines = 2;
+    self.titleLabel.backgroundColor = [UIColor redColor];
     self.freeDeliveryLabel.textColor = [MIUtility colorWithHex:0xffffff];
     self.purchaseView.layer.cornerRadius = 1.5;
     self.purchaseView.layer.borderWidth = 1;

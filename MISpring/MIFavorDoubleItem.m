@@ -18,19 +18,19 @@
         self.backgroundColor = [UIColor whiteColor];
         self.exclusiveTouch = YES;
         
-        self.itemImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.viewWidth, 150)];
+        self.itemImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.viewWidth, self.viewWidth)];
         self.itemImageView.clipsToBounds = YES;
         [self.itemImageView setContentMode:UIViewContentModeScaleAspectFill];
         [self addSubview:self.itemImageView];
         
-        self.favorTitleLabel = [[UILabel alloc] initWithFrame:CGRectInset(CGRectMake(2, 155, self.viewWidth - 4, 16), 3, 0)];
+        self.favorTitleLabel = [[UILabel alloc] initWithFrame:CGRectInset(CGRectMake(2, self.viewWidth + 5, self.viewWidth - 4, 16), 3, 0)];
         self.favorTitleLabel.lineBreakMode = NSLineBreakByWordWrapping|NSLineBreakByClipping;
         self.favorTitleLabel.font = [UIFont systemFontOfSize:12];
         self.favorTitleLabel.textColor = [MIUtility colorWithHex:0xe505050];
         self.favorTitleLabel.textAlignment = NSTextAlignmentLeft;
         [self addSubview:self.favorTitleLabel];
         
-        self.priceView = [[UIView alloc] initWithFrame:CGRectMake(0, 172, self.viewWidth, 28)];
+        self.priceView = [[UIView alloc] initWithFrame:CGRectMake(0, self.favorTitleLabel.bottom, self.viewWidth, 28)];
         
         self.rmbLabel = [[UILabel alloc] initWithFrame:CGRectMake(3, 4, 10, 20)];
         self.rmbLabel.backgroundColor = [UIColor clearColor];

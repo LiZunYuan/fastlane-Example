@@ -36,7 +36,7 @@
 - (id) initWithreuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:reuseIdentifier];
     if (self) {
-        
+        self.viewWidth = SCREEN_WIDTH;
         UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.viewWidth, 20)];
         view.backgroundColor = [MIUtility colorWithHex:0xeeeeee];
         
