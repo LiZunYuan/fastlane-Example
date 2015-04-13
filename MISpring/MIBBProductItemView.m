@@ -24,7 +24,7 @@
         self.backgroundColor = [UIColor whiteColor];
         self.exclusiveTouch = YES;
         
-        itemImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 148, 148)];
+        itemImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, (SCREEN_WIDTH - 24) / 2 , 148)];
         itemImage.clipsToBounds = YES;
         [itemImage setContentMode:UIViewContentModeScaleAspectFill];
         [self addSubview:itemImage];
@@ -67,7 +67,7 @@
         price.userInteractionEnabled = NO;
         [self addSubview:price];
         
-        discountLabel = [[UILabel alloc] initWithFrame:CGRectInset(CGRectMake(50, 179, 100, 15), 5, 0)];
+        discountLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.viewWidth - 5 - 100, 179, 100, 15)];
         discountLabel.font = [UIFont systemFontOfSize:11];
         discountLabel.textColor = [MIUtility colorWithHex:0x858585];
         discountLabel.textAlignment = NSTextAlignmentRight;
