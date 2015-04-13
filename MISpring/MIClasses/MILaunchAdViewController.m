@@ -124,7 +124,7 @@
         view.backgroundColor = [MIUtility colorWithHex:bg];
         [_adScrollView addSubview:view];
         
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 460)];
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 460 *SCREEN_WIDTH / 320)];
         imageView.centerY = view.centerY;
         imageView.contentMode = UIViewContentModeScaleAspectFit;
         [imageView sd_setImageWithURL:[NSURL URLWithString:[dict objectForKey:@"img"]]];

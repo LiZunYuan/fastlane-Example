@@ -13,7 +13,7 @@
 #import "MIListTableViewController.h"
 #define SCROLL_VIEW_HEIGHT  124
 #define NOMAL_SPACE                 8
-#define IMAGEVIEW_WIDTH           SCREEN_WIDTH * 280 / 320
+#define IMAGEVIEW_WIDTH           ceilf(SCREEN_WIDTH * 280 / 320.0)
 #define SCROLL_VIEW_WIDTH          (NOMAL_SPACE + IMAGEVIEW_WIDTH)
 #define RECOMMEND_VIEW_WIDTH    (SCREEN_WIDTH / 3.0)
 #define RECOMMEND_IMG_HEIGHT    (SCREEN_WIDTH * 87 / 320.0)

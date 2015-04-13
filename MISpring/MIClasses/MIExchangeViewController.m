@@ -307,9 +307,9 @@
                     } else {
                         if (!self.veriCodeView) {
                             _veriCodeView = [[[NSBundle mainBundle] loadNibNamed:@"MICoinApplyVerifyView" owner:self options:nil] objectAtIndex:0];
-                            self.veriCodeView.frame = CGRectMake(0, 0, self.veriCodeView.viewWidth, self.veriCodeView.viewHeight);
+                            self.veriCodeView.frame = CGRectMake(0, 0, SCREEN_WIDTH, self.veriCodeView.viewHeight);
                             if ([UIDevice isRetina4inch]) {
-                                self.veriCodeView.bgView.top = 120;
+                                self.veriCodeView.bgView.top = 120 * SCREEN_WIDTH / 320;
                             }
                             [self.view addSubview:self.veriCodeView];
                         }

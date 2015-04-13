@@ -42,13 +42,13 @@
         priceOris = [NSMutableArray arrayWithCapacity:6];
         temaiImages = [NSMutableArray arrayWithCapacity:6];
         
-        float btnWidth = SCREEN_WIDTH / 320 * 91;
-        float btnHeight = SCREEN_WIDTH / 320 * 105;
+        float btnWidth = (SCREEN_WIDTH - 48) / 3;
+        float btnHeight = (SCREEN_WIDTH - 48) / 3 + 14;
         for (NSInteger i = 0; i < 2; ++i)
         {
             for (NSInteger j = 0; j < 3; ++j)
             {
-                NSInteger x = 12 + j * (btnWidth + 11.5);
+                NSInteger x = 12 + j * (btnWidth + 12);
                 UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(x, (btnHeight + 12) * i + 44, btnWidth, btnHeight)];
                 button.tag = i * 3  + j;
                 button.backgroundColor = [UIColor clearColor];

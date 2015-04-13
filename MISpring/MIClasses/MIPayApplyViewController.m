@@ -157,6 +157,8 @@
     [_getCodeBtn addTarget:self action:@selector(getVerificationCode:) forControlEvents:UIControlEventTouchUpInside];
     [codeView addSubview: _getCodeBtn];
     
+    _inputCodeField.viewWidth = _getCodeBtn.left - _inputCodeField.left;
+    
     UIView *line2 = [[UIView alloc] initWithFrame:CGRectMake(12, codeView.viewHeight - 1, SCREEN_WIDTH - 12, 0.6)];
     line2.backgroundColor = MINormalBackgroundColor;
     [codeView addSubview:line2];
@@ -204,6 +206,7 @@
     _inputPasswordField.delegate = self;
     _inputPasswordField.secureTextEntry = YES;
     [pwdView addSubview:_inputPasswordField];
+    _inputPasswordField.viewWidth = forgetPWD.left - _inputPasswordField.left;
     
     [_backView addSubview:pwdView];
     
