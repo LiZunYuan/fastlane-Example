@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
+        <deployment version="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <objects>
@@ -11,66 +11,113 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_test_email.png" id="dDV-iR-rv2">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_test_email.png" translatesAutoresizingMaskIntoConstraints="NO" id="dDV-iR-rv2">
                     <rect key="frame" x="17" y="11" width="19" height="19"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="19" id="Vhq-Ro-aCf"/>
+                        <constraint firstAttribute="height" constant="19" id="qRO-f2-zsm"/>
+                    </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="验证码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hBg-mr-JIB">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="验证码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBg-mr-JIB">
                     <rect key="frame" x="50" y="0.0" width="45" height="41"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="JMU-BP-3GV"/>
+                        <constraint firstAttribute="height" constant="41" id="hM6-FP-PZK"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入短信验证码" minimumFontSize="17" id="0sR-4v-KCQ">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入短信验证码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0sR-4v-KCQ">
                     <rect key="frame" x="99" y="0.0" width="140" height="41"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="qpu-lx-vsu"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next"/>
                     <connections>
                         <outlet property="delegate" destination="iN0-l3-epB" id="ko2-zs-61z"/>
                     </connections>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YhK-KW-cCS">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhK-KW-cCS">
                     <rect key="frame" x="241" y="9" width="71" height="24"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="rF7-K6-esu"/>
+                        <constraint firstAttribute="width" constant="71" id="t5d-6U-UHp"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <state key="normal" title="获取验证码">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <view contentMode="scaleToFill" id="XWp-05-EPd">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWp-05-EPd">
                     <rect key="frame" x="50" y="44" width="270" height="1"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="xAZ-wt-CM4"/>
+                    </constraints>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_register_code.png" id="YMB-yr-Ngv">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_register_code.png" translatesAutoresizingMaskIntoConstraints="NO" id="YMB-yr-Ngv">
                     <rect key="frame" x="18" y="57" width="19" height="19"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="19" id="C1L-hx-GPQ"/>
+                        <constraint firstAttribute="height" constant="19" id="o8a-Qb-IK5"/>
+                    </constraints>
                 </imageView>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请设置新密码（6-16个字符）" minimumFontSize="17" clearButtonMode="whileEditing" id="Pdm-lw-7na">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请设置新密码（6-16个字符）" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Pdm-lw-7na">
                     <rect key="frame" x="99" y="47" width="213" height="43"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="DrO-a2-9yB"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                     <connections>
                         <outlet property="delegate" destination="iN0-l3-epB" id="yIb-EA-2Yg"/>
                     </connections>
                 </textField>
-                <view contentMode="scaleToFill" id="VH9-Iu-jgH">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VH9-Iu-jgH">
                     <rect key="frame" x="50" y="89" width="270" height="1"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="9Ub-XT-G00"/>
+                    </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密  码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZwK-jI-qF0">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密  码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZwK-jI-qF0">
                     <rect key="frame" x="50" y="44" width="45" height="46"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="jBT-5T-7be"/>
+                        <constraint firstAttribute="height" constant="46" id="oyT-TP-lX7"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YhK-KW-cCS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="9" id="5Gm-qt-4h7"/>
+                <constraint firstItem="Pdm-lw-7na" firstAttribute="top" secondItem="XWp-05-EPd" secondAttribute="bottom" constant="2" id="5Xy-ts-Ik6"/>
+                <constraint firstAttribute="trailing" secondItem="VH9-Iu-jgH" secondAttribute="trailing" id="6ly-P0-iUO"/>
+                <constraint firstItem="ZwK-jI-qF0" firstAttribute="leading" secondItem="YMB-yr-Ngv" secondAttribute="trailing" constant="13" id="Dhp-g7-zka"/>
+                <constraint firstItem="0sR-4v-KCQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="IBW-tN-E4V"/>
+                <constraint firstItem="YMB-yr-Ngv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="JnZ-kY-YKD"/>
+                <constraint firstAttribute="trailing" secondItem="YhK-KW-cCS" secondAttribute="trailing" constant="8" id="Klh-BA-X2V"/>
+                <constraint firstItem="dDV-iR-rv2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="Oie-9u-uCg"/>
+                <constraint firstItem="0sR-4v-KCQ" firstAttribute="leading" secondItem="hBg-mr-JIB" secondAttribute="trailing" constant="4" id="OqE-bo-bO9"/>
+                <constraint firstItem="hBg-mr-JIB" firstAttribute="leading" secondItem="dDV-iR-rv2" secondAttribute="trailing" constant="14" id="Peh-e0-hVU"/>
+                <constraint firstAttribute="trailing" secondItem="XWp-05-EPd" secondAttribute="trailing" id="Qb6-fB-Dbp"/>
+                <constraint firstItem="YMB-yr-Ngv" firstAttribute="top" secondItem="dDV-iR-rv2" secondAttribute="bottom" constant="27" id="R9q-Md-C6D"/>
+                <constraint firstItem="XWp-05-EPd" firstAttribute="top" secondItem="0sR-4v-KCQ" secondAttribute="bottom" constant="3" id="Rgx-Nr-UhL"/>
+                <constraint firstItem="VH9-Iu-jgH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="UBd-fu-ZYZ"/>
+                <constraint firstItem="hBg-mr-JIB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="We3-ir-1vz"/>
+                <constraint firstItem="VH9-Iu-jgH" firstAttribute="top" secondItem="XWp-05-EPd" secondAttribute="bottom" constant="44" id="WhH-8P-6aE"/>
+                <constraint firstItem="XWp-05-EPd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="YbQ-aK-KTy"/>
+                <constraint firstItem="dDV-iR-rv2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="auc-7Y-KfU"/>
+                <constraint firstItem="YhK-KW-cCS" firstAttribute="leading" secondItem="0sR-4v-KCQ" secondAttribute="trailing" constant="2" id="cEb-MI-u1s"/>
+                <constraint firstItem="Pdm-lw-7na" firstAttribute="leading" secondItem="ZwK-jI-qF0" secondAttribute="trailing" constant="4" id="hW5-n6-vj8"/>
+                <constraint firstItem="ZwK-jI-qF0" firstAttribute="top" secondItem="hBg-mr-JIB" secondAttribute="bottom" constant="3" id="vZr-Q9-hRv"/>
+                <constraint firstAttribute="trailing" secondItem="Pdm-lw-7na" secondAttribute="trailing" constant="8" id="wCz-r3-lyL"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>

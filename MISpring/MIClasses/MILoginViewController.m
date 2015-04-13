@@ -166,15 +166,16 @@
     otherConnetLabel.textColor = [UIColor grayColor];
     otherConnetLabel.textAlignment = UITextAlignmentCenter;
     [self.view addSubview:otherConnetLabel];
-    UILabel *splitLineLeft = [[UILabel alloc] initWithFrame:CGRectMake(10, otherConnetLabel.centerY, 60, 1)];
+    UILabel *splitLineLeft = [[UILabel alloc] initWithFrame:CGRectMake(otherConnetLabel.left - 60, otherConnetLabel.centerY, 60, 1)];
     splitLineLeft.backgroundColor = [UIColor colorWithWhite:0.3 alpha:0.2];
     [self.view addSubview:splitLineLeft];
     
-    UILabel *splitLineRight = [[UILabel alloc] initWithFrame:CGRectMake(250, otherConnetLabel.centerY, 60, 1)];
+    UILabel *splitLineRight = [[UILabel alloc] initWithFrame:CGRectMake(otherConnetLabel.right, otherConnetLabel.centerY, 60, 1)];
     splitLineRight.backgroundColor = [UIColor colorWithWhite:0.3 alpha:0.2];
     [self.view addSubview:splitLineRight];
     
-    _taobaoLogin = [[UIImageView alloc] initWithFrame:CGRectMake(30, self.view.viewHeight - 52 - 16, 52, 52)];
+    float iconWhiteSpace = (self.view.viewWidth - 52 * 3)/4.0;
+    _taobaoLogin = [[UIImageView alloc] initWithFrame:CGRectMake(iconWhiteSpace, self.view.viewHeight - 52 - 16, 52, 52)];
     _taobaoLogin.userInteractionEnabled = YES;
     _taobaoLogin.layer.cornerRadius = 5.0;
     _taobaoLogin.layer.masksToBounds = YES;
@@ -184,7 +185,7 @@
     UITapGestureRecognizer *taobaoLoginTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(goTaobaoLogin)];
     [_taobaoLogin addGestureRecognizer:taobaoLoginTap];
     
-    _qqLogin = [[UIImageView alloc] initWithFrame:CGRectMake(130, self.view.viewHeight - 52 - 16, 52, 52)];
+    _qqLogin = [[UIImageView alloc] initWithFrame:CGRectMake(iconWhiteSpace * 2 + 52, self.view.viewHeight - 52 - 16, 52, 52)];
     _qqLogin.userInteractionEnabled = YES;
     _qqLogin.clipsToBounds = YES;
     _qqLogin.layer.cornerRadius = 5.0;
@@ -194,7 +195,7 @@
     UITapGestureRecognizer *qqLoginTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(goQQLogin)];
     [_qqLogin addGestureRecognizer:qqLoginTap];
     
-    _weiboLogin = [[UIImageView alloc] initWithFrame:CGRectMake(230, self.view.viewHeight - 52 - 16, 52, 52)];
+    _weiboLogin = [[UIImageView alloc] initWithFrame:CGRectMake(iconWhiteSpace * 3 + 52 * 2, self.view.viewHeight - 52 - 16, 52, 52)];
     _weiboLogin.userInteractionEnabled = YES;
     _weiboLogin.clipsToBounds = YES;
     _weiboLogin.layer.cornerRadius = 5.0;

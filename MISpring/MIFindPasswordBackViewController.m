@@ -45,6 +45,7 @@
     [_bacView addSubview:topLabel];
     
     _findBackView = [[[NSBundle mainBundle] loadNibNamed:@"MIFindBackView" owner:self options:nil] objectAtIndex:0];
+    _findBackView.viewWidth = SCREEN_WIDTH;
     _findBackView.delegate = self;
     _findBackView.top = topLabel.bottom;
     [_findBackView.getCodeBtn addTarget:self action:@selector(getUserCode) forControlEvents:UIControlEventTouchUpInside];
