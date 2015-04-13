@@ -21,6 +21,7 @@
 #define MITAOBAO_OREDE_ITEM_PRICE    3
 #define MITAOBAO_OREDE_ITEM_IMAGE    4
 #define MITAOBAO_OREDE_PAGESIZE     10
+#define NOMAL_SPACE 12
 
 @interface MIOrderTaobaoItemCell:UITableViewCell
 
@@ -42,36 +43,36 @@
     self = [super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:reuseIdentifier];
     if (self) {
         self.selectionStyle = UITableViewCellSelectionStyleNone;
-        timeLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 5, 300, 25)];
+        timeLabel = [[UILabel alloc]initWithFrame:CGRectMake(NOMAL_SPACE, 5, SCREEN_WIDTH - (NOMAL_SPACE * 2), 25)];
         timeLabel.font = [UIFont systemFontOfSize:14];
         timeLabel.textColor = [UIColor colorWithWhite:0.3 alpha:0.5];
         
-        UIView *line1 = [[UIView alloc]initWithFrame:CGRectMake(10, 35, self.viewWidth-20, 1)];
+        UIView *line1 = [[UIView alloc]initWithFrame:CGRectMake(NOMAL_SPACE, 35, SCREEN_WIDTH - (NOMAL_SPACE * 2), 1)];
         line1.backgroundColor = [UIColor lightGrayColor];
         line1.alpha = 0.3;
         
-        imageView = [[UIImageView alloc] initWithFrame: CGRectMake(10, 45, 50, 50)];
+        imageView = [[UIImageView alloc] initWithFrame: CGRectMake(NOMAL_SPACE, 45, 50, 50)];
         [imageView.layer setBorderWidth:0.6]; //边框宽度
         [imageView.layer setBorderColor:[UIColor colorWithWhite:0.3 alpha:0.10].CGColor];
         
-        titleLabel = [[UILabel alloc] initWithFrame: CGRectMake(70, 38+5, 210, 20)];
+        titleLabel = [[UILabel alloc] initWithFrame: CGRectMake(imageView.right + 8, 38+5, SCREEN_WIDTH - (imageView.right + 8 + NOMAL_SPACE), 20)];
         titleLabel.backgroundColor = [UIColor clearColor];
         titleLabel.textAlignment = UITextAlignmentLeft;
         titleLabel.textColor = [UIColor darkGrayColor];
         titleLabel.font = [UIFont fontWithName:@"Arial" size:13];
         
-        priceLabel = [[RTLabel alloc] initWithFrame:CGRectMake(70, 65, 210, 20)];
+        priceLabel = [[RTLabel alloc] initWithFrame:CGRectMake(imageView.right + NOMAL_SPACE, 65, 210, 20)];
         priceLabel.backgroundColor = [UIColor clearColor];
         priceLabel.font = [UIFont fontWithName:@"Arial" size:13];
         
-        UIView *line2 = [[UIView alloc]initWithFrame:CGRectMake(10, 100, self.viewWidth-20, 1)];
+        UIView *line2 = [[UIView alloc]initWithFrame:CGRectMake(NOMAL_SPACE, 100,SCREEN_WIDTH - (NOMAL_SPACE * 2), 1)];
         line2.backgroundColor = [UIColor lightGrayColor];
         line2.alpha = 0.3;
         
         UIImageView *indicator = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"ic_avatar_arrow"]];
-        indicator.frame = CGRectMake(self.viewWidth - 10-10, 60, 10, 15);
+        indicator.frame = CGRectMake(SCREEN_WIDTH - (NOMAL_SPACE * 2), 64, 10, 15);
         
-        returnLabel = [[RTLabel alloc] initWithFrame:CGRectMake(10, 110, 200, 25)];
+        returnLabel = [[RTLabel alloc] initWithFrame:CGRectMake(NOMAL_SPACE, 110, 200, 25)];
         returnLabel.backgroundColor = [UIColor clearColor];
         returnLabel.textAlignment = RTTextAlignmentLeft;
         returnLabel.font = [UIFont systemFontOfSize:14];
@@ -81,17 +82,17 @@
         commitBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         commitBtn.clipsToBounds = YES;
         commitBtn.layer.cornerRadius = 3;
-        commitBtn.frame = CGRectMake(230, 105, 80, 25);
+        commitBtn.frame = CGRectMake(SCREEN_WIDTH - 80 - NOMAL_SPACE, 105, 80, 25);
         [commitBtn setTitle:@"领取米币" forState:UIControlStateNormal];
         
-        UIView *line3 = [[UIView alloc]initWithFrame:CGRectMake(0, 135, self.viewWidth, 1)];
+        UIView *line3 = [[UIView alloc]initWithFrame:CGRectMake(0, 135, SCREEN_WIDTH, 1)];
         line3.backgroundColor = [UIColor lightGrayColor];
         line3.alpha = 0.3;
         
-        UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 136, self.viewWidth, 14)];
+        UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 136, SCREEN_WIDTH, 14)];
         view.backgroundColor = [MIUtility colorWithHex:0xeeeeee];
         
-        UIView *line4 = [[UIView alloc]initWithFrame:CGRectMake(0, 150, self.viewWidth, 1)];
+        UIView *line4 = [[UIView alloc]initWithFrame:CGRectMake(0, 150, SCREEN_WIDTH, 1)];
         line4.backgroundColor = [UIColor lightGrayColor];
         line4.alpha = 0.3;
         
@@ -150,7 +151,7 @@
     
     UIView *viewForHeader = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 40)];
     viewForHeader.backgroundColor = [UIColor clearColor];
-    UILabel *tipsLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, SCREEN_WIDTH - 20, 40)];
+    UILabel *tipsLabel = [[UILabel alloc] initWithFrame:CGRectMake(NOMAL_SPACE, 0, SCREEN_WIDTH - NOMAL_SPACE * 2, 40)];
     tipsLabel.backgroundColor = [UIColor clearColor];
     tipsLabel.font = [UIFont systemFontOfSize:12.0];
     tipsLabel.textAlignment = UITextAlignmentCenter;
