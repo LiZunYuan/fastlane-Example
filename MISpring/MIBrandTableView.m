@@ -420,6 +420,7 @@
             if (_newItemInteger < 50) {
                 _newItemInteger = (modelArray.count > 50 ? 50 : modelArray.count);
             }
+            _newItemInteger = 10;
         }
     }
 }
@@ -466,13 +467,13 @@
     else
     {
         if (indexPath.row > _newItemInteger ) {
-            return 206;
+            return (SCREEN_WIDTH * 148 / 320) + 40 + 8;
         }
         if (indexPath.row == _newItemInteger) {
-            return  5 + 40;
+            return  40;
         }
         else{
-            return 197;
+            return (SCREEN_WIDTH * 150 / 320) + 46.5 + 8;
         }
     }
 
@@ -568,7 +569,7 @@
                 oldBrandCell = [[MIBrandTuanItemCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"fengQiang"];
                 oldBrandCell.selectionStyle = UITableViewCellSelectionStyleNone;
                 oldBrandCell.backgroundColor = [UIColor clearColor];
-                UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, oldBrandCell.viewWidth, 45)];
+                UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 18, SCREEN_WIDTH, 12)];
                 label.textAlignment = UITextAlignmentCenter;
                 label.font = [UIFont systemFontOfSize:12.0];
                 label.text = @"最后疯抢倒计时";
@@ -579,7 +580,7 @@
                 leftLine.backgroundColor = [MIUtility colorWithHex:0x999999];
                 [oldBrandCell addSubview:leftLine];
                 
-                UIView *rightLine = [[UIView alloc] initWithFrame:CGRectMake(220, 24, 80, 1)];
+                UIView *rightLine = [[UIView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 20 - 80, 24, 80, 1)];
                 rightLine.backgroundColor = [MIUtility colorWithHex:0x999999];
                 [oldBrandCell addSubview:rightLine];
                 

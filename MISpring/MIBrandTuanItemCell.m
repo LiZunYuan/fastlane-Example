@@ -8,6 +8,9 @@
 
 #import "MIBrandTuanItemCell.h"
 
+#define BrandTuanCellItemWidth  (SCREEN_WIDTH * 148 / 320)
+
+
 @implementation MIBrandTuanItemCell
 
 @synthesize itemView1;
@@ -16,7 +19,7 @@
 -(id)initWithReuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
     if (self) {
-        itemView1 = [[MIBrandTuanItemView alloc] initWithFrame:CGRectMake(8, 8, 148, 200)];
+        itemView1 = [[MIBrandTuanItemView alloc] initWithFrame:CGRectMake(8, 8, BrandTuanCellItemWidth, BrandTuanCellItemWidth + 40)];
         [self addSubview: itemView1];
         
         itemView2 = [[MIBrandTuanItemView alloc] initWithFrame:CGRectMake(itemView1.right + 8, itemView1.top, itemView1.viewWidth, itemView1.viewHeight)];

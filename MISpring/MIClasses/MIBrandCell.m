@@ -8,6 +8,7 @@
 
 #import "MIBrandCell.h"
 
+#define CellItemWidth  (SCREEN_WIDTH * 150 / 320)
 
 @implementation MIBrandCellItemView
 
@@ -17,7 +18,7 @@
         self.layer.borderColor = MILineColor.CGColor;
         self.layer.borderWidth = 0.5;
         
-        _imageView = [[UIImageView alloc] initWithFrame: CGRectMake(0, 0, 150, 142.5)];
+        _imageView = [[UIImageView alloc] initWithFrame: CGRectMake(0, 0, CellItemWidth, CellItemWidth)];
         [self addSubview:self.imageView];
         
         UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, self.viewHeight - 20, self.viewWidth, 20)];
@@ -57,11 +58,11 @@
         self.selectionStyle = UITableViewCellSelectionStyleGray;
         self.backgroundColor = [UIColor clearColor];
         
-        UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 8, PHONE_SCREEN_SIZE.width, 189)];
+        UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, 8, PHONE_SCREEN_SIZE.width, CellItemWidth + 46.5)];
         bgView.backgroundColor = [UIColor whiteColor];
         [self addSubview:bgView];
         
-        leftView = [[MIBrandCellItemView alloc] initWithFrame: CGRectMake(8, 8, 150, 142.5)];
+        leftView = [[MIBrandCellItemView alloc] initWithFrame: CGRectMake(8, 8, CellItemWidth, CellItemWidth)];
         [bgView addSubview:leftView];
         
         rightView = [[MIBrandCellItemView alloc] initWithFrame:CGRectMake(leftView.right + 4, leftView.top, leftView.viewWidth, leftView.viewHeight)];
@@ -70,7 +71,7 @@
         UIView *discountView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
         discountView.backgroundColor = [MIUtility colorWithHex:0xf2f2f2];
         discountView.alpha = 0.9;
-        discountView.centerX = PHONE_SCREEN_SIZE.width / 2;
+        discountView.centerX = SCREEN_WIDTH / 2;
         discountView.centerY = leftView.centerY;
         discountView.layer.cornerRadius = 20;
         [bgView addSubview:discountView];
