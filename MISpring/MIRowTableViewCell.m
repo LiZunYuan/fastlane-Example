@@ -13,21 +13,26 @@
 
 - (void)awakeFromNib {
     // Initialization code
-    self.titleLabel = [[RTLabel alloc] initWithFrame:CGRectMake(128, 16, 180, 45)];
     self.titleLabel.textColor = MIColor666666;
-    self.titleLabel.lineBreakMode = RTTextLineBreakModeWordWrapping;
-    self.titleLabel.font = [UIFont systemFontOfSize:14];
-    self.titleLabel.textAlignment = RTTextAlignmentLeft;
-    [self addSubview: self.titleLabel];
+    self.titleLabel.lineBreakMode = NSLineBreakByWordWrapping | NSLineBreakByTruncatingTail;
     
     self.tuanBuyButton = [[MITuanBuyButton alloc] initWithFrame:CGRectMake(0, 0, 68, 45)];
-    self.tuanBuyButton.right = self.viewWidth - 12;
-    self.tuanBuyButton.bottom = self.oriPriceLabel.bottom;
-    [self addSubview:self.tuanBuyButton];
+    [self.contentView addSubview:self.tuanBuyButton];
+    [self.tuanBuyButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self).offset(-12);
+        make.bottom.equalTo(self.oriPriceLabel.mas_bottom);
+        make.height.equalTo(@45);
+        make.width.equalTo(@68);
+    }];
     
     UIView *line = [[UIView alloc]initWithFrame:CGRectMake(0, 130.5, PHONE_SCREEN_SIZE.width, 0.5)];
     line.backgroundColor = MINormalBackgroundColor;
-    [self addSubview:line];
+    [self.contentView addSubview:line];
+    [line mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(self).offset(-0.5);
+        make.height.equalTo(@(0.5));
+        make.width.equalTo(self);
+    }];
 }
 
 

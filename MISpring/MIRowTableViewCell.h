@@ -19,7 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 @property (weak, nonatomic) IBOutlet MIDeleteUILabel *oriPriceLabel;
 
-@property (strong, nonatomic) RTLabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 //@property (nonatomic, strong) UIImageView *anewImageView;
 @property (nonatomic, strong) MITuanBuyButton *tuanBuyButton;
 @property (nonatomic, strong) MITuanItemModel *model;
