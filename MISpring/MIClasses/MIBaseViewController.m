@@ -33,8 +33,14 @@
         [super loadView];
     } else if (IOS_VERSION >= 7.0) {
         self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        if (IS_HOTSPOT_ON) {
+            self.view.viewHeight -= HOTSPOT_STATUSBAR_HEIGHT;
+        }
     } else {
         self.view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - PHONE_STATUSBAR_HEIGHT)];
+        if (IS_HOTSPOT_ON) {
+            self.view.viewHeight -= HOTSPOT_STATUSBAR_HEIGHT;
+        }
     }
 }
 
