@@ -31,10 +31,10 @@
         [self addSubview:self.tipLabel];
 //        self.tipLabel.bottom = self.bottom - 4;
         
-        _martshowIcon = [[UIImageView alloc] initWithFrame:CGRectMake(5, _itemImageView.bottom + 10, 50, 25)];
+        _martshowIcon = [[UIImageView alloc] initWithFrame:CGRectMake(5, _itemImageView.bottom + 8, 50, 25)];
         [self addSubview:self.martshowIcon];
         
-        _martshowLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, _itemImageView.bottom + 10, self.viewWidth - _martshowIcon.right - 5, 12)];
+        _martshowLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, _itemImageView.bottom + 8, self.viewWidth - _martshowIcon.right - 5, 12)];
         _martshowLabel.left = _martshowIcon.right + 5;
         _martshowLabel.font = [UIFont systemFontOfSize:12.0];
         [self addSubview:self.martshowLabel];
@@ -43,7 +43,7 @@
         _discountLabel.font = [UIFont systemFontOfSize:10.0];
         _discountLabel.textColor = [MIUtility colorWithHex:0x999999];
         _discountLabel.left = _martshowLabel.left;
-        _discountLabel.top = _martshowLabel.bottom + 4;
+        _discountLabel.bottom = _martshowIcon.bottom;
         [self addSubview:self.discountLabel];
         
 //        UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.viewWidth, 1)];

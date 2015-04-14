@@ -275,11 +275,11 @@
         if ([[MIHeartbeat shareHeartbeat] hasNewOrderMessage]) {
             [self reloadTableViewDataSource];
         }
-        if ([[MIHeartbeat shareHeartbeat] hasNewMessage]) {
-            [self.navigationBar setBarLeftButtonItem:self selector:@selector(goMsgCenter) imageKey:@"mi_navbar_tool_message_have"];
-        } else {
-            [self.navigationBar setBarLeftButtonItem:self selector:@selector(goMsgCenter) imageKey:@"mi_navbar_tool_message_img"];
-        }
+//        if ([[MIHeartbeat shareHeartbeat] hasNewMessage]) {
+//            [self.navigationBar setBarLeftButtonItem:self selector:@selector(goMsgCenter) imageKey:@"mi_navbar_tool_message_have"];
+//        } else {
+//            [self.navigationBar setBarLeftButtonItem:self selector:@selector(goMsgCenter) imageKey:@"mi_navbar_tool_message_img"];
+//        }
     } else {
         [self updateUserWallInfo];
     }
@@ -323,11 +323,11 @@
         _usernameLabel.hidden = NO;
         _accountLabel.hidden = NO;
         _vipCenterIndicator.hidden = NO;
-        if ([[MIHeartbeat shareHeartbeat] hasNewMessage]) {
-             [self.navigationBar setBarLeftButtonItem:self selector:@selector(goMsgCenter) imageKey:@"mi_navbar_tool_message_have"];
-        } else {
-             [self.navigationBar setBarLeftButtonItem:self selector:@selector(goMsgCenter) imageKey:@"mi_navbar_tool_message_img"];
-        }
+//        if ([[MIHeartbeat shareHeartbeat] hasNewMessage]) {
+//             [self.navigationBar setBarLeftButtonItem:self selector:@selector(goMsgCenter) imageKey:@"mi_navbar_tool_message_have"];
+//        } else {
+//             [self.navigationBar setBarLeftButtonItem:self selector:@selector(goMsgCenter) imageKey:@"mi_navbar_tool_message_img"];
+//        }
         
         MIMainUser *mainUser = [MIMainUser getInstance];
         if (mainUser.userId != nil && mainUser.userId.integerValue > 0) {

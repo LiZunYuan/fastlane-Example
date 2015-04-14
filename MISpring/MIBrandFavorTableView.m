@@ -25,7 +25,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return (SCREEN_WIDTH - 24) / 2 + 48 + 8;
+    return (SCREEN_WIDTH - 24) / 2 + 41 + 8;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

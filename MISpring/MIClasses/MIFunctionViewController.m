@@ -49,13 +49,7 @@
         CGRect frame = CGRectMake(PHONE_SCREEN_SIZE.width*i, 0, PHONE_SCREEN_SIZE.width, self.view.viewHeight - self.navigationBarHeight);
         UIImageView *pic = [[UIImageView alloc] initWithFrame:frame];
         pic.contentMode = UIViewContentModeScaleAspectFit;
-        if (i == 0) {
-            pic.backgroundColor = [MIUtility colorWithHex:0xff434d];
-        } else if (i == 1) {
-            pic.backgroundColor = [MIUtility colorWithHex:0xb346f9];
-        } else if (i == 2) {
-            pic.backgroundColor = [MIUtility colorWithHex:0xff2e8d];
-        }
+        pic.backgroundColor = [MIUtility colorWithHex:0xf8f8f8];
         
         //不加载到系统缓存中。
         NSString *imagePath = [[NSBundle mainBundle] pathForResource:[_pics objectAtIndex:i] ofType:@"png"];
@@ -84,7 +78,7 @@
     UIView *lastview = [[UIView alloc] initWithFrame:frame];
     UIImageView *viewbg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, PHONE_SCREEN_SIZE.width, frame.size.height)];
     viewbg.contentMode = UIViewContentModeScaleAspectFit;
-    viewbg.backgroundColor = [MIUtility colorWithHex:0xffdb14];
+    viewbg.backgroundColor = [MIUtility colorWithHex:0xf8f8f8];
 
     NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"introduced004" ofType:@"png"];
     NSData *imagedata = [NSData dataWithContentsOfFile:imagePath];

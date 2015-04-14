@@ -19,7 +19,7 @@
         self.titleLabel.font = [UIFont systemFontOfSize:14];
         self.titleLabel.textColor = [MIUtility colorWithHex:0x666666];
         [self setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-        _line = [[UIView alloc] initWithFrame:CGRectMake(0, self.viewHeight - 2, self.viewWidth, 2)];
+        _line = [[UIView alloc] initWithFrame:CGRectMake(0, self.viewHeight - 5, self.viewWidth, 2)];
         _line.hidden = YES;
         _line.backgroundColor = [MIUtility colorWithHex:0xff5500];
         [self addSubview: _line];

@@ -89,6 +89,7 @@
             self.goBuyLabel.backgroundColor = [MIUtility colorWithHex:0xff8c24];
         }
     }
+    [self layoutIfNeeded];
 }
 /*
 // Only override drawRect: if you perform custom drawing.

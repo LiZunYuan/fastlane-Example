@@ -130,10 +130,10 @@
     if (self.adsArray && self.adsArray.count > 0) {
         _topAdView.hidden = NO;
         _topAdView.adsArray = self.adsArray;
-        _topAdView.frame = CGRectMake(0, 0, self.viewWidth, 50 * _adsArray.count);
+        _topAdView.frame = CGRectMake(0, 0, self.viewWidth, (50 * SCREEN_WIDTH / 320) * _adsArray.count);
         [_topAdView loadAds];
         
-        currentHeight = 50 * _adsArray.count;
+        currentHeight = (50 * SCREEN_WIDTH / 320) * _adsArray.count;
         hasTop = YES;
     } else {
         _topAdView.hidden = YES;

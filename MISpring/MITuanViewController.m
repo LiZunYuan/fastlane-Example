@@ -205,6 +205,7 @@
                         MITopAdView *topAdView = [[MITopAdView alloc]initWithFrame:CGRectMake(0, 0, self.view.viewWidth, 50 * model.muyingBanners.count)];
                         topAdView.adsArray = model.muyingBanners;
                         [topAdView loadAds];
+                        topAdView.viewHeight = topAdView.viewHeight;
                         tableView.tableView.tableHeaderView = topAdView;
                     }else{
                         tableView.tableView.tableHeaderView = nil;

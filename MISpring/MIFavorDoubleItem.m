@@ -32,7 +32,7 @@
         
         self.priceView = [[UIView alloc] initWithFrame:CGRectMake(0, self.favorTitleLabel.bottom, self.viewWidth, 28)];
         
-        self.rmbLabel = [[UILabel alloc] initWithFrame:CGRectMake(3, 4, 10, 20)];
+        self.rmbLabel = [[UILabel alloc] initWithFrame:CGRectMake(3, 5, 10, 20)];
         self.rmbLabel.backgroundColor = [UIColor clearColor];
         self.rmbLabel.textColor = [MIUtility colorWithHex:0xff3d00];
         self.rmbLabel.font = [UIFont systemFontOfSize:12];
