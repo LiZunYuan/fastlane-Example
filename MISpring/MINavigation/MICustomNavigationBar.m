@@ -59,7 +59,7 @@
     titleLabel.centerX = SCREEN_WIDTH/2;
     titleLabel.textAlignment = UITextAlignmentCenter;
     titleLabel.adjustsFontSizeToFitWidth = YES;
-    titleLabel.minimumScaleFactor = (size - 2)/ [UIFont systemFontSize];
+    titleLabel.minimumScaleFactor = (size - 2)/ [UIFont labelFontSize];
     [self addSubview:titleLabel];
     _titleLabel = titleLabel;
 }
@@ -92,7 +92,7 @@
     titleLabel.centerX = SCREEN_WIDTH/2;
     titleLabel.textAlignment = UITextAlignmentCenter;
     titleLabel.adjustsFontSizeToFitWidth = YES;
-    titleLabel.minimumScaleFactor = (size - 2)/ [UIFont systemFontSize];
+    titleLabel.minimumScaleFactor = (size - 2)/ [UIFont labelFontSize];
     [self addSubview:titleLabel];
     _titleLabel = titleLabel;
 }
@@ -111,7 +111,7 @@
     titleLabel.textColor = [MIUtility colorWithHex:0x333333];
     titleLabel.frame = CGRectMake(30, self.viewHeight - PHONE_NAVIGATION_BAR_ITEM_HEIGHT, SCREEN_WIDTH / 2, PHONE_NAVIGATION_BAR_ITEM_HEIGHT);
     titleLabel.adjustsFontSizeToFitWidth = YES;
-    titleLabel.minimumScaleFactor = (size - 2)/ [UIFont systemFontSize];
+    titleLabel.minimumScaleFactor = (size - 2)/ [UIFont labelFontSize];
     [self addSubview:titleLabel];
     _leftLabel = titleLabel;
 }
