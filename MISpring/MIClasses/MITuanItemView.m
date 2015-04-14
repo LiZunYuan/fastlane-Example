@@ -84,6 +84,7 @@
         price.userInteractionEnabled = NO;
         [self addSubview:price];
         
+        
         viewsInfo = [[UILabel alloc] initWithFrame:CGRectMake(70, description.bottom + 8, 80, 11)];
         viewsInfo.centerY = price.centerY;
         viewsInfo.backgroundColor = [UIColor clearColor];
@@ -92,6 +93,10 @@
         viewsInfo.font = [UIFont systemFontOfSize:11];
         [self addSubview:viewsInfo];
         viewsInfo.right = self.viewWidth - 8;
+        
+        if (IOS_VERSION < 7.0) {
+            viewsInfo.bottom = price.bottom - 2;
+        }
         
         _adView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.viewWidth, self.viewHeight)];
         _adView.backgroundColor = [UIColor whiteColor];

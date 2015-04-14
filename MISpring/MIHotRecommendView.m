@@ -12,7 +12,6 @@
 
 -(void)layoutSubviews
 {
-    [super layoutSubviews];
     [self.hotImageView sd_setImageWithURL:[NSURL URLWithString:_model.img] placeholderImage:[UIImage imageNamed:@"img_loading_daily1"]];
     NSString *desc = [_model.title stringByReplacingOccurrencesOfString:@"【" withString:@"["];
     desc = [desc stringByReplacingOccurrencesOfString:@"，" withString:@","];
@@ -89,7 +88,7 @@
             self.goBuyLabel.backgroundColor = [MIUtility colorWithHex:0xff8c24];
         }
     }
-    [self layoutIfNeeded];
+    [super layoutSubviews];
 }
 /*
 // Only override drawRect: if you perform custom drawing.

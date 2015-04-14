@@ -81,7 +81,7 @@
         headerBgView.backgroundColor = [UIColor clearColor];
         UIImageView *youpinTop = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"youpin_top"]];
         youpinTop.backgroundColor = [UIColor clearColor];
-        youpinTop.frame = CGRectMake(0, 0, self.view.viewWidth, 32);
+        youpinTop.frame = CGRectMake(0, 0, self.view.viewWidth, 32 * SCREEN_WIDTH / 320);
         [headerBgView addSubview:youpinTop];
         
         NSInteger bgHeight = 0;
