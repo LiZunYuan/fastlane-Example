@@ -15,8 +15,8 @@
 -(id) initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if(self){
-        self.layer.borderColor = MILineColor.CGColor;
-        self.layer.borderWidth = 0.5;
+//        self.layer.borderColor = MILineColor.CGColor;
+//        self.layer.borderWidth = 0.5;
         
         _imageView = [[UIImageView alloc] initWithFrame: CGRectMake(0, 0, CellItemWidth, CellItemWidth)];
         [self addSubview:self.imageView];
