@@ -55,7 +55,7 @@
         [imageView.layer setBorderWidth:0.6]; //边框宽度
         [imageView.layer setBorderColor:[UIColor colorWithWhite:0.3 alpha:0.10].CGColor];
         
-        titleLabel = [[UILabel alloc] initWithFrame: CGRectMake(imageView.right + 8, 38+5, SCREEN_WIDTH - (imageView.right + 8 + NOMAL_SPACE), 20)];
+        titleLabel = [[UILabel alloc] initWithFrame: CGRectMake(imageView.right + 8, 38+5, SCREEN_WIDTH - (imageView.right + 8 + NOMAL_SPACE)-10, 20)];
         titleLabel.backgroundColor = [UIColor clearColor];
         titleLabel.textAlignment = UITextAlignmentLeft;
         titleLabel.textColor = [UIColor darkGrayColor];
