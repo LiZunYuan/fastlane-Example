@@ -20,7 +20,7 @@
         _titleLabel = [[UILabel alloc] init];
         self.titleLabel.backgroundColor = [UIColor clearColor];
         self.titleLabel.textColor = [MIUtility colorWithHex:0x333333];
-        self.titleLabel.frame = CGRectMake(0, 0, 160, PHONE_NAVIGATION_BAR_ITEM_HEIGHT);
+        self.titleLabel.frame = CGRectMake(0, 0, SCREEN_WIDTH / 2, PHONE_NAVIGATION_BAR_ITEM_HEIGHT);
         self.titleLabel.textAlignment = UITextAlignmentCenter;
         self.titleLabel.adjustsFontSizeToFitWidth = YES;
         [self addSubview:_titleLabel];

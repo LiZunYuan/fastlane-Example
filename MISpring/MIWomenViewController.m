@@ -26,7 +26,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _titleView = [[MINavigationBarTitleButtonView alloc] initWithFrame:CGRectMake(80, self.navigationBarHeight - PHONE_NAVIGATION_BAR_ITEM_HEIGHT, 160, PHONE_NAVIGATION_BAR_ITEM_HEIGHT)];
+    _titleView = [[MINavigationBarTitleButtonView alloc] initWithFrame:CGRectMake(80, self.navigationBarHeight - PHONE_NAVIGATION_BAR_ITEM_HEIGHT, SCREEN_WIDTH / 2, PHONE_NAVIGATION_BAR_ITEM_HEIGHT)];
+    _titleView.centerX = SCREEN_WIDTH / 2;
     [self.titleView setBarTitle:self.catName textSize:20.0];
     
     __weak typeof(self) weakSelf = self;
