@@ -71,7 +71,7 @@
         priceOri.strikeThroughEnabled = YES;
         [self addSubview:priceOri];
         
-        discountLabel = [[UILabel alloc] initWithFrame:CGRectInset(CGRectMake(110, description.bottom + 5, 40, 15), 5, 0)];
+        discountLabel = [[UILabel alloc] initWithFrame:CGRectMake(ProductCellItemWidth - 40, description.bottom + 5, 40, 15)];
         discountLabel.backgroundColor = [UIColor clearColor];
         discountLabel.font = [UIFont systemFontOfSize:12];
         discountLabel.textColor = [UIColor lightGrayColor];
