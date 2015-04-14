@@ -44,32 +44,32 @@
         line1.backgroundColor = [UIColor lightGrayColor];
         line1.alpha = 0.3;
 
-        user = [[UILabel alloc]initWithFrame:CGRectMake(20, 22, self.viewWidth - 20, 30)];
+        user = [[UILabel alloc]initWithFrame:CGRectMake(20, 22, self.viewWidth - 40, 30)];
         user.backgroundColor = [UIColor clearColor];
         user.font = [UIFont fontWithName:@"Arial" size:16];
         user.textColor = [UIColor grayColor];
         
-        UIView *line2 = [[UIView alloc]initWithFrame:CGRectMake(20, 52, self.viewWidth -20, 1)];
+        UIView *line2 = [[UIView alloc]initWithFrame:CGRectMake(20, 52, self.viewWidth - 40, 1)];
         line2.backgroundColor = [UIColor lightGrayColor];
         line2.alpha = 0.3;
         
-        amount = [[RTLabel alloc] initWithFrame: CGRectMake(20, 58, 280, 20)];
+        amount = [[RTLabel alloc] initWithFrame: CGRectMake(20, 58, self.viewWidth - 40, 20)];
         amount.backgroundColor = [UIColor clearColor];
         amount.font = [UIFont fontWithName:@"Arial" size:14];
 
-        income = [[RTLabel alloc] initWithFrame: CGRectMake(20, 78, 280, 20)];
+        income = [[RTLabel alloc] initWithFrame: CGRectMake(20, 78, self.viewWidth - 40, 20)];
         income.backgroundColor = [UIColor clearColor];
         income.font = [UIFont fontWithName:@"Arial" size:14];
 
-        state = [[RTLabel alloc] initWithFrame: CGRectMake(20, 98, 280, 20)];
+        state = [[RTLabel alloc] initWithFrame: CGRectMake(20, 98, self.viewWidth - 40, 20)];
         state.backgroundColor = [UIColor clearColor];
         state.font = [UIFont fontWithName:@"Arial" size:14];
         
-        UIView *line3 = [[UIView alloc]initWithFrame:CGRectMake(20, 118, self.viewWidth-20, 1)];
+        UIView *line3 = [[UIView alloc]initWithFrame:CGRectMake(20, 118, self.viewWidth - 40, 1)];
         line3.backgroundColor = [UIColor lightGrayColor];
         line3.alpha = 0.3;
         
-        time = [[UILabel alloc]initWithFrame:CGRectMake(20, 123, self.viewWidth - 20, 30)];
+        time = [[UILabel alloc]initWithFrame:CGRectMake(20, 123, self.viewWidth - 40, 30)];
         time.font =[UIFont fontWithName:@"Arial" size:16];
         time.backgroundColor = [UIColor clearColor];
         time.textColor = [UIColor grayColor];

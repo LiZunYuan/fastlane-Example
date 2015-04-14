@@ -34,7 +34,7 @@
 
         itemTimeLabel = [[UILabel alloc] init];
         itemTimeLabel.backgroundColor = [UIColor clearColor];
-        itemTimeLabel.frame = CGRectMake(10, 10, 280, 20);
+        itemTimeLabel.frame = CGRectMake(10, 10, SCREEN_WIDTH - 40, 20);
         itemTimeLabel.font = [UIFont fontWithName:@"Arial" size:14];
         
         UILabel *splitLineTop = [[UILabel alloc] initWithFrame:CGRectMake(0, 38, SCREEN_WIDTH - 20, 1)];

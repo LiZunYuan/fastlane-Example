@@ -245,7 +245,7 @@
     }
     else
     {
-        return (SCREEN_WIDTH - 24) / 2 + 54 + 8;
+        return (SCREEN_WIDTH - 24) / 2 + 43 + 8;
     }
 }
 
