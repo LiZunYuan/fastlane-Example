@@ -94,7 +94,7 @@
     [bgView addSubview:inviteButton];
     
     //或
-    UILabel *orLabel = [[UILabel alloc] initWithFrame:CGRectMake(140, inviteButton.bottom, 20, 60)];
+    UILabel *orLabel = [[UILabel alloc] initWithFrame:CGRectMake((bgView.viewWidth - 20)/2.0, inviteButton.bottom, 20, 60)];
     orLabel.backgroundColor = [UIColor clearColor];
     orLabel.text = @"或";
     orLabel.textColor = [MIUtility colorWithHex:0xAFAFAF];
@@ -102,12 +102,12 @@
     orLabel.font = [UIFont systemFontOfSize:12];
     [bgView addSubview:orLabel];
     
-    UIView *before = [[UIView alloc] initWithFrame:CGRectMake(30, 0, 100, 0.5)];
+    UIView *before = [[UIView alloc] initWithFrame:CGRectMake(30, 0, orLabel.left - 10 - 30, 0.5)];
     before.backgroundColor = [MIUtility colorWithHex:0xD3D3D3];
     before.centerY = orLabel.centerY;
     [bgView addSubview:before];
     
-    UIView *back = [[UIView alloc] initWithFrame:CGRectMake(orLabel.right+10, 0, 100, 0.5)];
+    UIView *back = [[UIView alloc] initWithFrame:CGRectMake(orLabel.right+10, 0, before.viewWidth, 0.5)];
     back.backgroundColor = [MIUtility colorWithHex:0xD3D3D3];
     back.centerY = orLabel.centerY;
     [bgView addSubview:back];

@@ -137,7 +137,7 @@
     
     UIImageView *tipsImg = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"qr_tips_img"]];
     tipsImg.bounds = CGRectMake(0, 0, 150*SCREEN_WIDTH/320.0, 150*SCREEN_WIDTH/320.0);
-    tipsImg.centerY = 100;
+    tipsImg.centerY = 100*SCREEN_WIDTH/320.0;
     tipsImg.centerX = _tipBg.viewWidth/2.0;
     [_tipBg addSubview:tipsImg];
     
