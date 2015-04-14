@@ -51,7 +51,7 @@
         description.textAlignment = UITextAlignmentLeft;
         [self addSubview:description];
         
-        rmbLabel = [[UILabel alloc] initWithFrame:CGRectMake(3, description.bottom + 7, 10, 12)];
+        rmbLabel = [[UILabel alloc] initWithFrame:CGRectMake(3, description.bottom + 8, 10, 12)];
         rmbLabel.backgroundColor = [UIColor clearColor];
         rmbLabel.textColor = [MIUtility colorWithHex:0xf73710];
         rmbLabel.font = [UIFont systemFontOfSize:12];
@@ -64,20 +64,20 @@
         price.font = [UIFont systemFontOfSize: 16];
         [self addSubview:price];
         
-        priceOri = [[MIDeleteUILabel alloc] initWithFrame: CGRectMake(price.right, description.bottom + 5, 80, 15)];
+        priceOri = [[MIDeleteUILabel alloc] initWithFrame: CGRectMake(price.right, description.bottom + 8, 80, 12)];
         priceOri.backgroundColor = [UIColor clearColor];
         priceOri.textColor = [UIColor lightGrayColor];
         priceOri.font = [UIFont systemFontOfSize: 12];
         priceOri.strikeThroughEnabled = YES;
         [self addSubview:priceOri];
         
-        discountLabel = [[UILabel alloc] initWithFrame:CGRectMake(ProductCellItemWidth - 40, description.bottom + 5, 40, 15)];
+        discountLabel = [[UILabel alloc] initWithFrame:CGRectMake(ProductCellItemWidth - 45, description.bottom + 5, 40, 15)];
         discountLabel.backgroundColor = [UIColor clearColor];
         discountLabel.font = [UIFont systemFontOfSize:12];
         discountLabel.textColor = [UIColor lightGrayColor];
         discountLabel.layer.cornerRadius = 1.0;
         discountLabel.clipsToBounds = YES;
-        discountLabel.textAlignment = UITextAlignmentCenter;
+        discountLabel.textAlignment = UITextAlignmentRight;
         [self addSubview:discountLabel];
     }
     
