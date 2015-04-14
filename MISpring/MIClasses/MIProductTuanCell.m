@@ -58,7 +58,7 @@
         rmbLabel.text = @"￥";
         [self addSubview:rmbLabel];
         
-        price = [[UILabel alloc] initWithFrame:CGRectMake(15, description.bottom + 3, 80, 20)];
+        price = [[UILabel alloc] initWithFrame:CGRectMake(15, description.bottom + 5, 80, 16)];
         price.backgroundColor = [UIColor clearColor];
         price.textColor = [MIUtility colorWithHex:0xf73710];
         price.font = [UIFont systemFontOfSize: 16];
@@ -70,6 +70,9 @@
         priceOri.font = [UIFont systemFontOfSize: 12];
         priceOri.strikeThroughEnabled = YES;
         [self addSubview:priceOri];
+        
+        rmbLabel.bottom = price.bottom;
+        priceOri.bottom = price.bottom;
         
         discountLabel = [[UILabel alloc] initWithFrame:CGRectMake(ProductCellItemWidth - 45, description.bottom + 5, 40, 15)];
         discountLabel.backgroundColor = [UIColor clearColor];
