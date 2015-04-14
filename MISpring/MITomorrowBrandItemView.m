@@ -21,7 +21,7 @@
         self.exclusiveTouch = YES;
         [self addTarget:self action:@selector(actionClicked:) forControlEvents:UIControlEventTouchUpInside];
         
-        itemImgView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0 , self.viewWidth, 160)];
+        itemImgView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0 , self.viewWidth, 160 * SCREEN_WIDTH / 320.0)];
         itemImgView.backgroundColor = [UIColor clearColor];
         itemImgView.clipsToBounds = YES;
         [itemImgView setContentMode:UIViewContentModeScaleAspectFill];
