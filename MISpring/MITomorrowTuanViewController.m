@@ -271,7 +271,7 @@
     if (_hasMore && (indexPath.row == rows) && (count > 0)) {
         return 50;
     } else {
-        return 206.5;
+        return (SCREEN_WIDTH - 24) / 2 + 48 + 8;
     }
 }
 

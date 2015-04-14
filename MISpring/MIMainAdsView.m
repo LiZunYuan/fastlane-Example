@@ -22,7 +22,8 @@
 
 - (void)awakeFromNib
 {
-    _badgeTimeView = [[MIBadgeTimeView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH / 4, 20, 20 * 3 + 10, 20)];
+    float retio = SCREEN_WIDTH / 320.0;
+    _badgeTimeView = [[MIBadgeTimeView alloc] initWithFrame:CGRectMake(85 * retio, 18 * retio, (18 * 3 + 10) * retio, 18 * retio)];
     _badgeTimeView.hidden = YES;
     [self.leftAdsImageView addSubview:_badgeTimeView];
 }
