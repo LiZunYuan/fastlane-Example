@@ -68,8 +68,8 @@
     
     [self.navigationBar setBarTitle:@"我的米折"];
     [self.navigationBar setBarRightButtonItem:self selector:@selector(goSetting) imageKey:@"mi_navbar_tool_setting_img"];
-    [self.navigationBar setBarLeftButtonItem:self selector:@selector(goMsgCenter) imageKey:@"mi_navbar_tool_message_img"];
-        
+//    [self.navigationBar setBarLeftButtonItem:self selector:@selector(goMsgCenter) imageKey:@"mi_navbar_tool_message_img"];
+    
     _updateBadgeView = [[JSBadgeView alloc] initWithParentView:self.navigationBar.rightButton alignment:JSBadgeViewAlignmentTopRight];
     _updateBadgeView.badgeText = @"NEW";
     _updateBadgeView.userInteractionEnabled = NO;
@@ -93,7 +93,7 @@
     UIView *headView = [[UIView alloc] initWithFrame:CGRectZero];
     headView.backgroundColor = [UIColor clearColor];
     
-    _reminderLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.viewWidth, 0)];
+    _reminderLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 0)];
     self.reminderLabel.backgroundColor = [MIUtility colorWithHex:0x333333];
     self.reminderLabel.userInteractionEnabled = YES;
     self.reminderLabel.alpha = 0.7;

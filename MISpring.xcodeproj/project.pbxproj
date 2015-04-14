@@ -71,12 +71,12 @@
 		2B0CDA421AD76981001ACA9B /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0CDA371AD76981001ACA9B /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		2B0CDA431AD76981001ACA9B /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0CDA391AD76981001ACA9B /* View+MASAdditions.m */; };
 		2B0CDA451ADBC5E6001ACA9B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B0CDA441ADBC5E6001ACA9B /* LaunchScreen.xib */; };
-		2B0CDA471ADBCD31001ACA9B /* mispring.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0CDA461ADBCD31001ACA9B /* mispring.xcassets */; };
 		2B0CDA671ADBE98A001ACA9B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B0CDA641ADBE98A001ACA9B /* Default-568h@2x.png */; };
 		2B0CDA681ADBE98A001ACA9B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B0CDA651ADBE98A001ACA9B /* Default.png */; };
 		2B0CDA691ADBE98A001ACA9B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B0CDA661ADBE98A001ACA9B /* Default@2x.png */; };
 		2B0CDA6C1ADBE9A1001ACA9B /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B0CDA6A1ADBE9A1001ACA9B /* LaunchImage@2x.png */; };
 		2B0CDA6D1ADBE9A1001ACA9B /* LaunchImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B0CDA6B1ADBE9A1001ACA9B /* LaunchImage@3x.png */; };
+		2B5E73CB1ADCC8E8006484DE /* mispring.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5E73CA1ADCC8E8006484DE /* mispring.xcassets */; };
 		2BBEFED61AD4CE2D000269E1 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBEFED51AD4CE2D000269E1 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		331448B11AC96BC4009BFAB0 /* ic_register_account@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 331448B01AC96BC4009BFAB0 /* ic_register_account@2x.png */; };
 		331448B31AC96E67009BFAB0 /* img_login_taobao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 331448B21AC96E67009BFAB0 /* img_login_taobao@2x.png */; };
@@ -1042,12 +1042,12 @@
 		2B0CDA391AD76981001ACA9B /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
 		2B0CDA3A1AD76981001ACA9B /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		2B0CDA441ADBC5E6001ACA9B /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		2B0CDA461ADBCD31001ACA9B /* mispring.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = mispring.xcassets; sourceTree = "<group>"; };
 		2B0CDA641ADBE98A001ACA9B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		2B0CDA651ADBE98A001ACA9B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
 		2B0CDA661ADBE98A001ACA9B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		2B0CDA6A1ADBE9A1001ACA9B /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = SOURCE_ROOT; };
 		2B0CDA6B1ADBE9A1001ACA9B /* LaunchImage@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@3x.png"; sourceTree = SOURCE_ROOT; };
+		2B5E73CA1ADCC8E8006484DE /* mispring.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = mispring.xcassets; sourceTree = SOURCE_ROOT; };
 		2BBEFED41AD4CE2D000269E1 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
 		2BBEFED51AD4CE2D000269E1 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 		331448B01AC96BC4009BFAB0 /* ic_register_account@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_register_account@2x.png"; sourceTree = "<group>"; };
@@ -2329,7 +2329,6 @@
 		176883B516A7D66A00810722 = {
 			isa = PBXGroup;
 			children = (
-				2B0CDA461ADBCD31001ACA9B /* mispring.xcassets */,
 				176883CA16A7D66A00810722 /* MISpring */,
 				176883EB16A7D85300810722 /* Resources */,
 				C5A3487B16EDDECB001FE759 /* Dependencies */,
@@ -2424,6 +2423,7 @@
 				C5AB7BE519B5F6CF00947E8C /* tuan.brand.cats.data */,
 				C5AB7BE619B5F6CF00947E8C /* tuan.cats.data */,
 				297918071AD419B7006AE128 /* youpin.cats.data */,
+				2B5E73CA1ADCC8E8006484DE /* mispring.xcassets */,
 				C575B76C1852D9850075D3ED /* app.config.data */,
 				C5876613171C40A200C8C9F0 /* ads.local.data */,
 				C5C29906177540D900D83BD0 /* shake_match.m4r */,
@@ -4318,7 +4318,6 @@
 				C5A9CE41176EF39F00E956FE /* invite@2x.png in Resources */,
 				C561D3E5181B9315003B61BA /* ic_clock_small@2x.png in Resources */,
 				DBA746E51AA5594D00FFFE86 /* img_tips_contentoperate@2x.png in Resources */,
-				2B0CDA471ADBCD31001ACA9B /* mispring.xcassets in Resources */,
 				C5DB245C18178295005628FA /* ic_baoliao_zan_large@2x.png in Resources */,
 				C53D6C25176F1CCA0088CE56 /* ic_bg_invite_hl.png in Resources */,
 				DB7B47B918C6F61D005E31A6 /* dollar@2x.png in Resources */,
@@ -4466,6 +4465,7 @@
 				33AD62B71A50F76500321A50 /* bg_sale1@2x.png in Resources */,
 				DB246BDD19C14A030083942C /* mainscreen_tabbar_bg@2x.png in Resources */,
 				DB26497A1A4BE5C300D63AD5 /* img_loading_daily1@2x.png in Resources */,
+				2B5E73CB1ADCC8E8006484DE /* mispring.xcassets in Resources */,
 				C5C866A11700690D00F81C0B /* text_input_bg@2x.png in Resources */,
 				DBAFCF5A1AC2553B00BC5EDA /* ic_hot_more@2x.png in Resources */,
 				C56F6CD0181531C4002B3ED8 /* mizhewang_logo.png in Resources */,
@@ -5226,6 +5226,8 @@
 		176883E516A7D66A00810722 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5266,6 +5268,8 @@
 		176883E616A7D66A00810722 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -5336,6 +5340,8 @@
 		83B5741E171BC97B00FB2976 /* AdHoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (

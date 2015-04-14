@@ -245,7 +245,7 @@
     }
     else
     {
-        return 160 * SCREEN_WIDTH / 320.0 + 52.5;
+        return (SCREEN_WIDTH - 24) / 2 + 54 + 8;
     }
 }
 

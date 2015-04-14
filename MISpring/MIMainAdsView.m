@@ -43,7 +43,7 @@
         
         NSDictionary *dic2 = [dataArray objectAtIndex:1];
         imgUrl = [dic2 objectForKey:@"img"];
-        self.rightTopImageView.contentMode = UIViewContentModeCenter;
+        self.rightTopImageView.contentMode = UIViewContentModeScaleToFill;
         [self.rightTopImageView sd_setImageWithURL:[dic2 objectForKey:@"img"] placeholderImage:[UIImage imageNamed:@"img_loading_daily2"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
             if (!error && image)
             {
