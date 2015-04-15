@@ -28,7 +28,7 @@
     [self.view addSubview:imageView];
     
     self.view.backgroundColor = [MIUtility colorWithHex:0xedffff];
-    UILabel *titleLabel1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 40)];
+    UILabel *titleLabel1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 40)];
     titleLabel1.backgroundColor = [UIColor clearColor];
     titleLabel1.font = [UIFont systemFontOfSize:20];
     titleLabel1.textColor = [MIUtility colorWithHex:0x666666];
@@ -38,7 +38,7 @@
     [self.view addSubview:titleLabel1];
     
     
-    UILabel *titleLabel2 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 40)];
+    UILabel *titleLabel2 = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 40)];
     titleLabel2.backgroundColor = [UIColor clearColor];
     titleLabel2.textColor = [MIUtility colorWithHex:0x666666];
     titleLabel2.font = [UIFont systemFontOfSize:20];
