@@ -98,7 +98,7 @@
     NSInteger grade = [MIMainUser getInstance].grade.integerValue;
     NSString *currentGradeImagePath = [NSString stringWithFormat:@"ic_vip_v%ld",(long)grade];
     self.currentGradeImageView.image = [UIImage imageNamed:currentGradeImagePath];
-    self.circleImageView.transform = CGAffineTransformMakeTranslation(49 * grade, 0);
+    self.circleImageView.transform = CGAffineTransformMakeTranslation(((PHONE_SCREEN_SIZE.width - 20 - 20 * 2)/5.0 - 2) * grade, 0);
     
     if (self.memberStringArray.count > grade) {
         self.gradeLabel.text = [self.memberStringArray objectAtIndex:grade];
