@@ -65,7 +65,7 @@
     NSString *forgetAccount = @"忘记账户？";
     CGSize labelSize = [forgetAccount sizeWithFont:[UIFont systemFontOfSize:14.0f]
                                  constrainedToSize:CGSizeMake(300, 30)];
-    UILabel *_forgetAccount = [[UILabel alloc] initWithFrame:CGRectMake(300 - labelSize.width, 75 + self.navigationBarHeight, labelSize.width + 10, 30)];
+    UILabel *_forgetAccount = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 20 - labelSize.width, 75 + self.navigationBarHeight, labelSize.width + 10, 30)];
     _forgetAccount.backgroundColor = [UIColor clearColor];
     _forgetAccount.font = [UIFont systemFontOfSize:14.0];
     _forgetAccount.textColor = [UIColor blueColor];
