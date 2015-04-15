@@ -231,6 +231,7 @@
     } else {
         _mainHeaderAdView = [[MIMainHeaderAdView alloc] initWithFrame:CGRectMake(0, _squareAdsView.bottom, self.viewWidth, 0)];
     }
+    _mainHeaderAdView.top = _squareAdsView.bottom;
     [_mainHeaderAdView loadData:_mainHeaderAds];
     header.viewHeight += _mainHeaderAdView.viewHeight;
     [header addSubview:_mainHeaderAdView];

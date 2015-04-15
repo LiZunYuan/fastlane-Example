@@ -26,13 +26,13 @@
                     </connections>
                 </scrollView>
                 <pageControl opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="BWN-mJ-vhC">
-                    <rect key="frame" x="0.0" y="423" width="320" height="37"/>
+                    <rect key="frame" x="0.0" y="433" width="320" height="37"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="37" id="BfG-3s-fNs"/>
                     </constraints>
                 </pageControl>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahR-J8-OEy">
-                    <rect key="frame" x="110" y="382" width="100" height="36"/>
+                    <rect key="frame" x="110" y="392" width="100" height="36"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="ZBk-jm-yEy"/>
@@ -47,7 +47,7 @@
                     </connections>
                 </button>
                 <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;&lt;向左滑动或3s后进入首页" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMS-Kc-aLB">
-                    <rect key="frame" x="0.0" y="455" width="320" height="20"/>
+                    <rect key="frame" x="0.0" y="450" width="320" height="20"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="0Ua-ym-JCQ"/>
@@ -59,14 +59,14 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="BWN-mJ-vhC" firstAttribute="bottom" secondItem="NMS-Kc-aLB" secondAttribute="top" constant="5" id="6XY-4m-Qqd"/>
                 <constraint firstAttribute="trailing" secondItem="BWN-mJ-vhC" secondAttribute="trailing" id="6yD-JR-auR"/>
                 <constraint firstAttribute="centerX" secondItem="ahR-J8-OEy" secondAttribute="centerX" id="APj-Qb-O9E"/>
                 <constraint firstItem="BWN-mJ-vhC" firstAttribute="top" secondItem="ahR-J8-OEy" secondAttribute="bottom" constant="5" id="ES0-zh-LJC"/>
                 <constraint firstAttribute="trailing" secondItem="NMS-Kc-aLB" secondAttribute="trailing" id="FGP-ZF-MSI"/>
                 <constraint firstItem="NMS-Kc-aLB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="I6C-UF-594"/>
-                <constraint firstAttribute="bottom" secondItem="NMS-Kc-aLB" secondAttribute="bottom" constant="5" id="JyM-4Z-cMS"/>
+                <constraint firstAttribute="bottom" secondItem="NMS-Kc-aLB" secondAttribute="bottom" constant="10" id="JyM-4Z-cMS"/>
                 <constraint firstAttribute="trailing" secondItem="qVr-3W-tlA" secondAttribute="trailing" id="YyM-xT-vW9"/>
+                <constraint firstAttribute="bottom" secondItem="BWN-mJ-vhC" secondAttribute="bottom" constant="10" id="blX-0x-BK0"/>
                 <constraint firstItem="qVr-3W-tlA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cmG-53-fiC"/>
                 <constraint firstItem="BWN-mJ-vhC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dH6-GE-G2h"/>
                 <constraint firstItem="qVr-3W-tlA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dan-ak-ihD"/>
