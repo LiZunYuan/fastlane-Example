@@ -68,11 +68,11 @@ def generate_ipa(typePrefix,codesigningIdentity,exportMethod,options)
 
 
     gym(
-      workspace: './MISpring.xcworkspace',
-      scheme: 'MISpring',
+      workspace: ‘./fastlaneExample.xcworkspace',
+      scheme: 'fastlaneExample',
       clean: true,
       output_directory: './build/',
-      output_name: 'mizhe.ipa',
+      output_name: 'fastlaneExample.ipa',
       configuration: 'Release',
       codesigning_identity: "#{codesigningIdentity}",
       include_symbols: 'true',
