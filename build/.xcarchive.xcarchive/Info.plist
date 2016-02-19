@@ -7,18 +7,18 @@
 		<key>ApplicationPath</key>
 		<string>Applications/MISpring.app</string>
 		<key>CFBundleIdentifier</key>
-		<string>com.mizhe.spring</string>
+		<string>com.mizhe.spring.enterprise</string>
 		<key>CFBundleShortVersionString</key>
 		<string>4.9.11</string>
 		<key>CFBundleVersion</key>
-		<string>01252008</string>
+		<string>02192012</string>
 		<key>SigningIdentity</key>
-		<string>iPhone Distribution: Husor Inc. (NEPH5T7SP8)</string>
+		<string>iPhone Distribution: Hunet Inc.</string>
 	</dict>
 	<key>ArchiveVersion</key>
 	<integer>2</integer>
 	<key>CreationDate</key>
-	<date>2016-01-25T12:08:16Z</date>
+	<date>2016-02-19T12:12:57Z</date>
 	<key>Name</key>
 	<string>MISpring</string>
 	<key>SchemeName</key>

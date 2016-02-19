@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="fastlane">
+  <testsuite name="run">
+    
+      
+      <testcase name="0: Verifying required fastlane version" time="0.000402">
+        
+      </testcase>
+    
+      
+      <testcase name="1: default_platform" time="0.000183">
+        
+      </testcase>
+    
+      
+      <testcase name="2: cocoapods" time="2.854806">
+        
+      </testcase>
+    
+      
+      <testcase name="3: /usr/libexec/PlistBuddy -c &quot;set :ChannelID Enterprise&quot; .././MISpring/MISpring-Info.plist" time="0.008009">
+        
+      </testcase>
+    
+      
+      <testcase name="4: increment_build_number" time="1.469372">
+        
+      </testcase>
+    
+      
+      <testcase name="5: update_app_identifier" time="0.548325">
+        
+      </testcase>
+    
+      
+      <testcase name="6: gym" time="21.03982">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

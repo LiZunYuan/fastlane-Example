@@ -5,7 +5,7 @@
 		<key>CFBundleDevelopmentRegion</key>
 		<string>English</string>
 		<key>CFBundleIdentifier</key>
-		<string>com.apple.xcode.dsym.com.mizhe.spring</string>
+		<string>com.apple.xcode.dsym.com.mizhe.spring.enterprise</string>
 		<key>CFBundleInfoDictionaryVersion</key>
 		<string>6.0</string>
 		<key>CFBundlePackageType</key>
@@ -15,6 +15,6 @@
 		<key>CFBundleShortVersionString</key>
 		<string>4.9.11</string>
 		<key>CFBundleVersion</key>
-		<string>01252008</string>
+		<string>02192012</string>
 	</dict>
 </plist>

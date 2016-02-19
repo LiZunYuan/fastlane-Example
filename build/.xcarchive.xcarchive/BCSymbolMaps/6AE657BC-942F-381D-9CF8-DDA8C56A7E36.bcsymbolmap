@@ -15,12 +15,12 @@ OBJC_METH_VAR_TYPE_
 l_OBJC_CLASS_RO_$_ViewController
 OBJC_LABEL_CLASS_$
 Apple LLVM version 7.0.0 (clang-700.1.76)
-/Users/lizy/Library/Developer/Xcode/DerivedData/ModuleCache/RBTNWIQC3DL2/UIKit-2LM3EQU7VVY4O.pcm
+/Users/lizy/Library/Developer/Xcode/DerivedData/ModuleCache/3E35UDTXIV1PQ/UIKit-2LM3EQU7VVY4O.pcm
 UIKit
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/UIKit.framework
 -[ViewController didReceiveMemoryWarning]
-/Users/lizy/Documents/工作/米折/src/fastlane专用mizhe/MISpring/MISpring/ViewController.m
-/Users/lizy/Documents/工作/米折/src/fastlane专用mizhe/MISpring
+/Users/lizy/Documents/工作/米折/src/mizhe/MISpring/ViewController.m
+/Users/lizy/Documents/工作/米折/src/mizhe
 -[ViewController viewDidLoad]
 -[AppDelegate application:didFinishLaunchingWithOptions:]
 -[AppDelegate applicationWillResignActive:]
@@ -196,12 +196,12 @@ OBJC_PROP_NAME_ATTR_143
 l_OBJC_$_PROP_LIST_AppDelegate
 l_OBJC_CLASS_RO_$_AppDelegate
 OBJC_CLASS_$_AppDelegate
-/Users/lizy/Library/Developer/Xcode/DerivedData/ModuleCache/RBTNWIQC3DL2/Foundation-A3SOD99KJ0S9.pcm
+/Users/lizy/Library/Developer/Xcode/DerivedData/ModuleCache/3E35UDTXIV1PQ/Foundation-A3SOD99KJ0S9.pcm
 Foundation
 -[AppDelegate .cxx_destruct]
-/Users/lizy/Documents/工作/米折/src/fastlane专用mizhe/MISpring/MISpring/AppDelegate.m
+/Users/lizy/Documents/工作/米折/src/mizhe/MISpring/AppDelegate.m
 -[AppDelegate setWindow:]
-/Users/lizy/Documents/工作/米折/src/fastlane专用mizhe/MISpring/MISpring/AppDelegate.h
+/Users/lizy/Documents/工作/米折/src/mizhe/MISpring/AppDelegate.h
 -[AppDelegate window]
 -[AppDelegate applicationWillTerminate:]
 -[AppDelegate applicationDidBecomeActive:]
@@ -211,15 +211,15 @@ Foundation
 -[AppDelegate application:didFinishLaunchingWithOptions:]
 OBJC_CLASSLIST_REFERENCES_$_
 main
-/Users/lizy/Documents/工作/米折/src/fastlane专用mizhe/MISpring/MISpring/main.m
+/Users/lizy/Documents/工作/米折/src/mizhe/MISpring/main.m
 l_OBJC_METACLASS_RO_$_PodsDummy_Pods
 OBJC_METACLASS_$_PodsDummy_Pods
 l_OBJC_CLASS_RO_$_PodsDummy_Pods
 OBJC_CLASS_$_PodsDummy_Pods
-/Users/lizy/Library/Developer/Xcode/DerivedData/ModuleCache/3HZMFVLM10ATH/ObjectiveC-2CD0WTQVXITO7.pcm
+/Users/lizy/Library/Developer/Xcode/DerivedData/ModuleCache/3DPRKQ0HAS4ND/ObjectiveC-2CD0WTQVXITO7.pcm
 ObjectiveC
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/usr/include/objc
-/Users/lizy/Library/Developer/Xcode/DerivedData/ModuleCache/3HZMFVLM10ATH/Foundation-A3SOD99KJ0S9.pcm
+/Users/lizy/Library/Developer/Xcode/DerivedData/ModuleCache/3DPRKQ0HAS4ND/Foundation-A3SOD99KJ0S9.pcm
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/Foundation.framework
-/Users/lizy/Documents/工作/米折/src/fastlane专用mizhe/MISpring/Pods/Target Support Files/Pods/Pods-dummy.m
-/Users/lizy/Documents/工作/米折/src/fastlane专用mizhe/MISpring/Pods
+/Users/lizy/Documents/工作/米折/src/mizhe/Pods/Target Support Files/Pods/Pods-dummy.m
+/Users/lizy/Documents/工作/米折/src/mizhe/Pods

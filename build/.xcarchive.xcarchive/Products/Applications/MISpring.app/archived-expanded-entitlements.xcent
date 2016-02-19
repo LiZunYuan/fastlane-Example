@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>NEPH5T7SP8.com.mizhe.spring</string>
+	<string>M93PT6PGRH.com.mizhe.spring.enterprise</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>NEPH5T7SP8.com.mizhe.spring</string>
+		<string>M93PT6PGRH.com.mizhe.spring.enterprise</string>
 	</array>
 </dict>
 </plist>
