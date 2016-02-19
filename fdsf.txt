@@ -1,0 +1,443 @@
+{
+  "buildConfigurationName": "Release",
+  "diagnostics": [
+    {
+      "confidence": 10,
+      "confidenceDescription": "Absolute",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": "/Users/lizy/Documents/工作/米折/src/fastlane专用mizhe/MISpring/MISpring/ViewController.m",
+      "fileSnippet": null,
+      "html": {
+        "info": "<p>The following warning flags are not enabled:</p> <ul><li><div class=\"fauxpas-accent\"><strong>-Wall</strong></div> — Enables all warnings that have a high confidence value and low rate of false positives.</li> <li><div class=\"fauxpas-accent\"><strong>-Wconversion</strong></div> — Warns about implicit conversions that may alter a value. This is a group flag that encompasses many other similar warnings (for example, -Wenum-conversion, -Wsign-conversion, -Wint-conversion, -Wbool-conversion …) The “Suspicious Implicit Conversions” (<code>CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-accent\"><strong>-Wdeprecated-implementations</strong></div> — Warns if deprecated Objective-C methods are being overridden. The “Overriding Deprecated Objective-C Methods” (<code>CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-accent\"><strong>-Werror</strong></div> — Treats warnings as errors. Recommended so that warnings could not be ignored out of habit (warnings that are intentionally ignored should then be ignored explicitly by adding a &apos;-Wno-&lt;warning-name&gt;&apos; compiler flag). The “Treat Warnings as Errors” (<code>GCC_TREAT_WARNINGS_AS_ERRORS</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-accent\"><strong>-Wextra</strong></div> — Enables additional warnings that are useful but may have higher false positive rates or common philosophical objections.</li> <li><div class=\"fauxpas-accent\"><strong>-Wfloat-equal</strong></div> — Warns if floating-point values are used in equality comparisons.</li> <li><div class=\"fauxpas-accent\"><strong>-Wimplicit-retain-self</strong></div> — Warns if &apos;self&apos; is being implicitly retained by a block. The “Implicit retain of &apos;self&apos; within blocks” (<code>CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-accent\"><strong>-Wnewline-eof</strong></div> — Warns if a file does not end in a newline character. The “Missing Newline at End of File” (<code>GCC_WARN_ABOUT_MISSING_NEWLINE</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-accent\"><strong>-Wshadow</strong></div> — Warns whenever a local variable or type declaration shadows another variable, parameter, type, or class member (in C++), or whenever a built-in function is shadowed. The “Hidden local variables” (<code>GCC_WARN_SHADOW</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-accent\"><strong>-Wsign-compare</strong></div> — Warns when a comparison between signed and unsigned values could produce an incorrect result when the signed value is converted to unsigned. The “Sign Comparison” (<code>GCC_WARN_SIGN_COMPARE</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-accent\"><strong>-Wundef</strong></div> — Warns if an undefined identifier is evaluated in an &apos;#if&apos; directive.</li></ul>",
+        "ruleDescription": "Some compiler warnings and warning groups are so useful that they should be enabled at all times.",
+        "ruleName": "Recommended compiler warning options",
+        "ruleShortName": "CompilerWarnings",
+        "ruleWarning": null
+      },
+      "identifier": "-Wall,-Wconversion,-Wdeprecated-implementations,-Werror,-Wextra,-Wfloat-equal,-Wimplicit-retain-self,-Wnewline-eof,-Wshadow,-Wsign-compare,-Wundef",
+      "impact": "Maintainability",
+      "info": "The following warning flags are not enabled: -Wall — Enables all warnings that have a high confidence value and low rate of false positives. -Wconversion — Warns about implicit conversions that may alter a value. This is a group flag that encompasses many other similar warnings (for example, -Wenum-conversion, -Wsign-conversion, -Wint-conversion, -Wbool-conversion …) The “Suspicious Implicit Conversions” (CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION) Xcode setting controls this. -Wdeprecated-implementations — Warns if deprecated Objective-C methods are being overridden. The “Overriding Deprecated Objective-C Methods” (CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS) Xcode setting controls this. -Werror — Treats warnings as errors. Recommended so that warnings could not be ignored out of habit (warnings that are intentionally ignored should then be ignored explicitly by adding a &apos;-Wno-&lt;warning-name&gt;&apos; compiler flag). The “Treat Warnings as Errors” (GCC_TREAT_WARNINGS_AS_ERRORS) Xcode setting controls this. -Wextra — Enables additional warnings that are useful but may have higher false positive rates or common philosophical objections. -Wfloat-equal — Warns if floating-point values are used in equality comparisons. -Wimplicit-retain-self — Warns if &apos;self&apos; is being implicitly retained by a block. The “Implicit retain of &apos;self&apos; within blocks” (CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF) Xcode setting controls this. -Wnewline-eof — Warns if a file does not end in a newline character. The “Missing Newline at End of File” (GCC_WARN_ABOUT_MISSING_NEWLINE) Xcode setting controls this. -Wshadow — Warns whenever a local variable or type declaration shadows another variable, parameter, type, or class member (in C++), or whenever a built-in function is shadowed. The “Hidden local variables” (GCC_WARN_SHADOW) Xcode setting controls this. -Wsign-compare — Warns when a comparison between signed and unsigned values could produce an incorrect result when the signed value is converted to unsigned. The “Sign Comparison” (GCC_WARN_SIGN_COMPARE) Xcode setting controls this. -Wundef — Warns if an undefined identifier is evaluated in an &apos;#if&apos; directive.",
+      "ruleDescription": "Some compiler warnings and warning groups are so useful that they should be enabled at all times.",
+      "ruleName": "Recommended compiler warning options",
+      "ruleShortName": "CompilerWarnings",
+      "ruleWarning": null,
+      "severity": 5,
+      "severityDescription": "Warning"
+    },
+    {
+      "confidence": 8,
+      "confidenceDescription": "High",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": null,
+      "fileSnippet": null,
+      "html": {
+        "info": "<strong>Temporary files</strong> should be ignored in the version control system. The un-ignored paths are: <ul><li><code>*.swp</code></li></ul>",
+        "ruleDescription": "Warns whenever some files that are recommended to be ignored by the version control system are not ignored, or vice versa.",
+        "ruleName": "Recommended VCS ignores",
+        "ruleShortName": "RecommendedVCSIgnores",
+        "ruleWarning": null
+      },
+      "identifier": "Temporary files",
+      "impact": "Maintainability",
+      "info": "Temporary files should be ignored in the version control system. The un-ignored paths are: *.swp",
+      "ruleDescription": "Warns whenever some files that are recommended to be ignored by the version control system are not ignored, or vice versa.",
+      "ruleName": "Recommended VCS ignores",
+      "ruleShortName": "RecommendedVCSIgnores",
+      "ruleWarning": null,
+      "severity": 3,
+      "severityDescription": "Concern"
+    },
+    {
+      "confidence": 8,
+      "confidenceDescription": "High",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": null,
+      "fileSnippet": null,
+      "html": {
+        "info": "<strong>The Xcode build folder</strong> should be ignored in the version control system. The un-ignored paths are: <ul><li><code>build/</code></li> <li><code>DerivedData/</code></li></ul>",
+        "ruleDescription": "Warns whenever some files that are recommended to be ignored by the version control system are not ignored, or vice versa.",
+        "ruleName": "Recommended VCS ignores",
+        "ruleShortName": "RecommendedVCSIgnores",
+        "ruleWarning": null
+      },
+      "identifier": "The Xcode build folder",
+      "impact": "Maintainability",
+      "info": "The Xcode build folder should be ignored in the version control system. The un-ignored paths are: build/ DerivedData/",
+      "ruleDescription": "Warns whenever some files that are recommended to be ignored by the version control system are not ignored, or vice versa.",
+      "ruleName": "Recommended VCS ignores",
+      "ruleShortName": "RecommendedVCSIgnores",
+      "ruleWarning": null,
+      "severity": 3,
+      "severityDescription": "Concern"
+    },
+    {
+      "confidence": 8,
+      "confidenceDescription": "High",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 44,
+          "byteOffset": 207,
+          "line": 11,
+          "utf16Column": 44,
+          "utf16Offset": 192
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 163,
+          "line": 11,
+          "utf16Column": 0,
+          "utf16Offset": 148
+        }
+      },
+      "file": "/Users/lizy/Documents/工作/米折/src/fastlane专用mizhe/MISpring/MISpring/ViewController.h",
+      "fileSnippet": "@interface ViewController : UIViewController",
+      "html": {
+        "info": null,
+        "ruleDescription": "Warns when an Objective-C class name has no prefix (e.g. <code>Thing</code> instead of <code>FPXThing</code>).",
+        "ruleName": "Unprefixed Objective-C class",
+        "ruleShortName": "UnprefixedClass",
+        "ruleWarning": null
+      },
+      "identifier": "ViewController",
+      "impact": "Maintainability",
+      "info": null,
+      "ruleDescription": "Warns when an Objective-C class name has no prefix (e.g. Thing instead of FPXThing).",
+      "ruleName": "Unprefixed Objective-C class",
+      "ruleShortName": "UnprefixedClass",
+      "ruleWarning": null,
+      "severity": 3,
+      "severityDescription": "Concern"
+    },
+    {
+      "confidence": 10,
+      "confidenceDescription": "Absolute",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": null,
+      "fileSnippet": null,
+      "html": {
+        "info": "Required compiler argument <code>-DNDEBUG</code> is not used. This argument disables the C standard library assertion macro (as defined in <code>assert.h</code>).",
+        "ruleDescription": "For release builds, warns when some expected arguments are missing, or some unexpected arguments are present.",
+        "ruleName": "Problematic release build compiler arguments",
+        "ruleShortName": "ReleaseBuildCompilerArgs",
+        "ruleWarning": null
+      },
+      "identifier": "-DNDEBUG",
+      "impact": "Functionality",
+      "info": "Required compiler argument -DNDEBUG is not used. This argument disables the C standard library assertion macro (as defined in assert.h).",
+      "ruleDescription": "For release builds, warns when some expected arguments are missing, or some unexpected arguments are present.",
+      "ruleName": "Problematic release build compiler arguments",
+      "ruleShortName": "ReleaseBuildCompilerArgs",
+      "ruleWarning": null,
+      "severity": 9,
+      "severityDescription": "Error"
+    },
+    {
+      "confidence": 10,
+      "confidenceDescription": "Absolute",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": "/Users/lizy/Documents/工作/米折/src/fastlane专用mizhe/MISpring/MISpring/AppDelegate.m",
+      "fileSnippet": null,
+      "html": {
+        "info": "<p>The following warning flags are not enabled:</p> <ul><li><div class=\"fauxpas-accent\"><strong>-Wall</strong></div> — Enables all warnings that have a high confidence value and low rate of false positives.</li> <li><div class=\"fauxpas-accent\"><strong>-Wconversion</strong></div> — Warns about implicit conversions that may alter a value. This is a group flag that encompasses many other similar warnings (for example, -Wenum-conversion, -Wsign-conversion, -Wint-conversion, -Wbool-conversion …) The “Suspicious Implicit Conversions” (<code>CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-accent\"><strong>-Wdeprecated-implementations</strong></div> — Warns if deprecated Objective-C methods are being overridden. The “Overriding Deprecated Objective-C Methods” (<code>CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-accent\"><strong>-Werror</strong></div> — Treats warnings as errors. Recommended so that warnings could not be ignored out of habit (warnings that are intentionally ignored should then be ignored explicitly by adding a &apos;-Wno-&lt;warning-name&gt;&apos; compiler flag). The “Treat Warnings as Errors” (<code>GCC_TREAT_WARNINGS_AS_ERRORS</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-accent\"><strong>-Wextra</strong></div> — Enables additional warnings that are useful but may have higher false positive rates or common philosophical objections.</li> <li><div class=\"fauxpas-accent\"><strong>-Wfloat-equal</strong></div> — Warns if floating-point values are used in equality comparisons.</li> <li><div class=\"fauxpas-accent\"><strong>-Wimplicit-retain-self</strong></div> — Warns if &apos;self&apos; is being implicitly retained by a block. The “Implicit retain of &apos;self&apos; within blocks” (<code>CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-accent\"><strong>-Wnewline-eof</strong></div> — Warns if a file does not end in a newline character. The “Missing Newline at End of File” (<code>GCC_WARN_ABOUT_MISSING_NEWLINE</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-accent\"><strong>-Wshadow</strong></div> — Warns whenever a local variable or type declaration shadows another variable, parameter, type, or class member (in C++), or whenever a built-in function is shadowed. The “Hidden local variables” (<code>GCC_WARN_SHADOW</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-accent\"><strong>-Wsign-compare</strong></div> — Warns when a comparison between signed and unsigned values could produce an incorrect result when the signed value is converted to unsigned. The “Sign Comparison” (<code>GCC_WARN_SIGN_COMPARE</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-accent\"><strong>-Wundef</strong></div> — Warns if an undefined identifier is evaluated in an &apos;#if&apos; directive.</li></ul>",
+        "ruleDescription": "Some compiler warnings and warning groups are so useful that they should be enabled at all times.",
+        "ruleName": "Recommended compiler warning options",
+        "ruleShortName": "CompilerWarnings",
+        "ruleWarning": null
+      },
+      "identifier": "-Wall,-Wconversion,-Wdeprecated-implementations,-Werror,-Wextra,-Wfloat-equal,-Wimplicit-retain-self,-Wnewline-eof,-Wshadow,-Wsign-compare,-Wundef",
+      "impact": "Maintainability",
+      "info": "The following warning flags are not enabled: -Wall — Enables all warnings that have a high confidence value and low rate of false positives. -Wconversion — Warns about implicit conversions that may alter a value. This is a group flag that encompasses many other similar warnings (for example, -Wenum-conversion, -Wsign-conversion, -Wint-conversion, -Wbool-conversion …) The “Suspicious Implicit Conversions” (CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION) Xcode setting controls this. -Wdeprecated-implementations — Warns if deprecated Objective-C methods are being overridden. The “Overriding Deprecated Objective-C Methods” (CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS) Xcode setting controls this. -Werror — Treats warnings as errors. Recommended so that warnings could not be ignored out of habit (warnings that are intentionally ignored should then be ignored explicitly by adding a &apos;-Wno-&lt;warning-name&gt;&apos; compiler flag). The “Treat Warnings as Errors” (GCC_TREAT_WARNINGS_AS_ERRORS) Xcode setting controls this. -Wextra — Enables additional warnings that are useful but may have higher false positive rates or common philosophical objections. -Wfloat-equal — Warns if floating-point values are used in equality comparisons. -Wimplicit-retain-self — Warns if &apos;self&apos; is being implicitly retained by a block. The “Implicit retain of &apos;self&apos; within blocks” (CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF) Xcode setting controls this. -Wnewline-eof — Warns if a file does not end in a newline character. The “Missing Newline at End of File” (GCC_WARN_ABOUT_MISSING_NEWLINE) Xcode setting controls this. -Wshadow — Warns whenever a local variable or type declaration shadows another variable, parameter, type, or class member (in C++), or whenever a built-in function is shadowed. The “Hidden local variables” (GCC_WARN_SHADOW) Xcode setting controls this. -Wsign-compare — Warns when a comparison between signed and unsigned values could produce an incorrect result when the signed value is converted to unsigned. The “Sign Comparison” (GCC_WARN_SIGN_COMPARE) Xcode setting controls this. -Wundef — Warns if an undefined identifier is evaluated in an &apos;#if&apos; directive.",
+      "ruleDescription": "Some compiler warnings and warning groups are so useful that they should be enabled at all times.",
+      "ruleName": "Recommended compiler warning options",
+      "ruleShortName": "CompilerWarnings",
+      "ruleWarning": null,
+      "severity": 5,
+      "severityDescription": "Warning"
+    },
+    {
+      "confidence": 10,
+      "confidenceDescription": "Absolute",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": "/Users/lizy/Documents/工作/米折/src/fastlane专用mizhe/MISpring/MISpring/main.m",
+      "fileSnippet": null,
+      "html": {
+        "info": "<p>The following warning flags are not enabled:</p> <ul><li><div class=\"fauxpas-accent\"><strong>-Wall</strong></div> — Enables all warnings that have a high confidence value and low rate of false positives.</li> <li><div class=\"fauxpas-accent\"><strong>-Wconversion</strong></div> — Warns about implicit conversions that may alter a value. This is a group flag that encompasses many other similar warnings (for example, -Wenum-conversion, -Wsign-conversion, -Wint-conversion, -Wbool-conversion …) The “Suspicious Implicit Conversions” (<code>CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-accent\"><strong>-Wdeprecated-implementations</strong></div> — Warns if deprecated Objective-C methods are being overridden. The “Overriding Deprecated Objective-C Methods” (<code>CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-accent\"><strong>-Werror</strong></div> — Treats warnings as errors. Recommended so that warnings could not be ignored out of habit (warnings that are intentionally ignored should then be ignored explicitly by adding a &apos;-Wno-&lt;warning-name&gt;&apos; compiler flag). The “Treat Warnings as Errors” (<code>GCC_TREAT_WARNINGS_AS_ERRORS</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-accent\"><strong>-Wextra</strong></div> — Enables additional warnings that are useful but may have higher false positive rates or common philosophical objections.</li> <li><div class=\"fauxpas-accent\"><strong>-Wfloat-equal</strong></div> — Warns if floating-point values are used in equality comparisons.</li> <li><div class=\"fauxpas-accent\"><strong>-Wimplicit-retain-self</strong></div> — Warns if &apos;self&apos; is being implicitly retained by a block. The “Implicit retain of &apos;self&apos; within blocks” (<code>CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-accent\"><strong>-Wnewline-eof</strong></div> — Warns if a file does not end in a newline character. The “Missing Newline at End of File” (<code>GCC_WARN_ABOUT_MISSING_NEWLINE</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-accent\"><strong>-Wshadow</strong></div> — Warns whenever a local variable or type declaration shadows another variable, parameter, type, or class member (in C++), or whenever a built-in function is shadowed. The “Hidden local variables” (<code>GCC_WARN_SHADOW</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-accent\"><strong>-Wsign-compare</strong></div> — Warns when a comparison between signed and unsigned values could produce an incorrect result when the signed value is converted to unsigned. The “Sign Comparison” (<code>GCC_WARN_SIGN_COMPARE</code>) Xcode setting controls this.</li> <li><div class=\"fauxpas-accent\"><strong>-Wundef</strong></div> — Warns if an undefined identifier is evaluated in an &apos;#if&apos; directive.</li></ul>",
+        "ruleDescription": "Some compiler warnings and warning groups are so useful that they should be enabled at all times.",
+        "ruleName": "Recommended compiler warning options",
+        "ruleShortName": "CompilerWarnings",
+        "ruleWarning": null
+      },
+      "identifier": "-Wall,-Wconversion,-Wdeprecated-implementations,-Werror,-Wextra,-Wfloat-equal,-Wimplicit-retain-self,-Wnewline-eof,-Wshadow,-Wsign-compare,-Wundef",
+      "impact": "Maintainability",
+      "info": "The following warning flags are not enabled: -Wall — Enables all warnings that have a high confidence value and low rate of false positives. -Wconversion — Warns about implicit conversions that may alter a value. This is a group flag that encompasses many other similar warnings (for example, -Wenum-conversion, -Wsign-conversion, -Wint-conversion, -Wbool-conversion …) The “Suspicious Implicit Conversions” (CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION) Xcode setting controls this. -Wdeprecated-implementations — Warns if deprecated Objective-C methods are being overridden. The “Overriding Deprecated Objective-C Methods” (CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS) Xcode setting controls this. -Werror — Treats warnings as errors. Recommended so that warnings could not be ignored out of habit (warnings that are intentionally ignored should then be ignored explicitly by adding a &apos;-Wno-&lt;warning-name&gt;&apos; compiler flag). The “Treat Warnings as Errors” (GCC_TREAT_WARNINGS_AS_ERRORS) Xcode setting controls this. -Wextra — Enables additional warnings that are useful but may have higher false positive rates or common philosophical objections. -Wfloat-equal — Warns if floating-point values are used in equality comparisons. -Wimplicit-retain-self — Warns if &apos;self&apos; is being implicitly retained by a block. The “Implicit retain of &apos;self&apos; within blocks” (CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF) Xcode setting controls this. -Wnewline-eof — Warns if a file does not end in a newline character. The “Missing Newline at End of File” (GCC_WARN_ABOUT_MISSING_NEWLINE) Xcode setting controls this. -Wshadow — Warns whenever a local variable or type declaration shadows another variable, parameter, type, or class member (in C++), or whenever a built-in function is shadowed. The “Hidden local variables” (GCC_WARN_SHADOW) Xcode setting controls this. -Wsign-compare — Warns when a comparison between signed and unsigned values could produce an incorrect result when the signed value is converted to unsigned. The “Sign Comparison” (GCC_WARN_SIGN_COMPARE) Xcode setting controls this. -Wundef — Warns if an undefined identifier is evaluated in an &apos;#if&apos; directive.",
+      "ruleDescription": "Some compiler warnings and warning groups are so useful that they should be enabled at all times.",
+      "ruleName": "Recommended compiler warning options",
+      "ruleShortName": "CompilerWarnings",
+      "ruleWarning": null,
+      "severity": 5,
+      "severityDescription": "Warning"
+    },
+    {
+      "confidence": 8,
+      "confidenceDescription": "High",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": null,
+      "fileSnippet": null,
+      "html": {
+        "info": "<strong>Xcode private settings files</strong> should be ignored in the version control system. The un-ignored paths are: <ul><li><code>*.mode1v3</code></li> <li><code>*.mode2v3</code></li> <li><code>*.perspectivev3</code></li></ul>",
+        "ruleDescription": "Warns whenever some files that are recommended to be ignored by the version control system are not ignored, or vice versa.",
+        "ruleName": "Recommended VCS ignores",
+        "ruleShortName": "RecommendedVCSIgnores",
+        "ruleWarning": null
+      },
+      "identifier": "Xcode private settings files",
+      "impact": "Maintainability",
+      "info": "Xcode private settings files should be ignored in the version control system. The un-ignored paths are: *.mode1v3 *.mode2v3 *.perspectivev3",
+      "ruleDescription": "Warns whenever some files that are recommended to be ignored by the version control system are not ignored, or vice versa.",
+      "ruleName": "Recommended VCS ignores",
+      "ruleShortName": "RecommendedVCSIgnores",
+      "ruleWarning": null,
+      "severity": 3,
+      "severityDescription": "Concern"
+    },
+    {
+      "confidence": 8,
+      "confidenceDescription": "High",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 60,
+          "byteOffset": 220,
+          "line": 11,
+          "utf16Column": 60,
+          "utf16Offset": 205
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 160,
+          "line": 11,
+          "utf16Column": 0,
+          "utf16Offset": 145
+        }
+      },
+      "file": "/Users/lizy/Documents/工作/米折/src/fastlane专用mizhe/MISpring/MISpring/AppDelegate.h",
+      "fileSnippet": "@interface AppDelegate : UIResponder <UIApplicationDelegate>",
+      "html": {
+        "info": null,
+        "ruleDescription": "Warns when an Objective-C class name has no prefix (e.g. <code>Thing</code> instead of <code>FPXThing</code>).",
+        "ruleName": "Unprefixed Objective-C class",
+        "ruleShortName": "UnprefixedClass",
+        "ruleWarning": null
+      },
+      "identifier": "AppDelegate",
+      "impact": "Maintainability",
+      "info": null,
+      "ruleDescription": "Warns when an Objective-C class name has no prefix (e.g. Thing instead of FPXThing).",
+      "ruleName": "Unprefixed Objective-C class",
+      "ruleShortName": "UnprefixedClass",
+      "ruleWarning": null,
+      "severity": 3,
+      "severityDescription": "Concern"
+    },
+    {
+      "confidence": 10,
+      "confidenceDescription": "Absolute",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": null,
+      "fileSnippet": null,
+      "html": {
+        "info": "The ‘Class Prefix’ project setting field has no value.",
+        "ruleDescription": "The ‘Organization’ and ‘Class Prefix’ settings should always be set. The expected values for other settings are configurable.",
+        "ruleName": "Recommended project settings",
+        "ruleShortName": "BasicProjectSettings",
+        "ruleWarning": null
+      },
+      "identifier": null,
+      "impact": "Maintainability",
+      "info": "The ‘Class Prefix’ project setting field has no value.",
+      "ruleDescription": "The ‘Organization’ and ‘Class Prefix’ settings should always be set. The expected values for other settings are configurable.",
+      "ruleName": "Recommended project settings",
+      "ruleShortName": "BasicProjectSettings",
+      "ruleWarning": null,
+      "severity": 3,
+      "severityDescription": "Concern"
+    },
+    {
+      "confidence": 8,
+      "confidenceDescription": "High",
+      "context": null,
+      "extent": {
+        "end": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        },
+        "start": {
+          "byteColumn": 0,
+          "byteOffset": 0,
+          "line": 0,
+          "utf16Column": 0,
+          "utf16Offset": 0
+        }
+      },
+      "file": null,
+      "fileSnippet": null,
+      "html": {
+        "info": "<strong>Xcode moved-aside files</strong> should be ignored in the version control system. The un-ignored paths are: <ul><li><code>*.moved-aside</code></li></ul>",
+        "ruleDescription": "Warns whenever some files that are recommended to be ignored by the version control system are not ignored, or vice versa.",
+        "ruleName": "Recommended VCS ignores",
+        "ruleShortName": "RecommendedVCSIgnores",
+        "ruleWarning": null
+      },
+      "identifier": "Xcode moved-aside files",
+      "impact": "Maintainability",
+      "info": "Xcode moved-aside files should be ignored in the version control system. The un-ignored paths are: *.moved-aside",
+      "ruleDescription": "Warns whenever some files that are recommended to be ignored by the version control system are not ignored, or vice versa.",
+      "ruleName": "Recommended VCS ignores",
+      "ruleShortName": "RecommendedVCSIgnores",
+      "ruleWarning": null,
+      "severity": 3,
+      "severityDescription": "Concern"
+    }
+  ],
+  "fauxPasVersion": "1.6",
+  "projectIconBase64PNG": "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",
+  "projectName": "MISpring",
+  "projectPath": "/Users/lizy/Documents/工作/米折/src/fastlane专用mizhe/MISpring/MISpring.xcodeproj",
+  "targetBundleVersion": "01252008",
+  "targetName": "MISpring",
+  "timeStamp": 1455881334,
+  "versionControlRevision": "39efc55ec10260a691d186944bd5cd18e38c4d45",
+  "versionControlSystemName": "Git"
+}

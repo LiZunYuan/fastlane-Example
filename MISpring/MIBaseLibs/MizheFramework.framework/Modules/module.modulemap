@@ -1,6 +1,0 @@
-framework module MizheFramework {
-  umbrella header "MizheFramework.h"
-
-  export *
-  module * { export * }
-}

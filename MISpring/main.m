@@ -2,17 +2,15 @@
 //  main.m
 //  MISpring
 //
-//  Created by XU YUJIAN on 13-1-17.
-//  Copyright (c) 2013年 MiZhe Inc. All rights reserved.
+//  Created by 李遵源 on 16/1/21.
+//  Copyright © 2016年 李遵源. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
-#import "MIAppDelegate.h"
-
-int main(int argc, char *argv[])
-{
+int main(int argc, char * argv[]) {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([MIAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

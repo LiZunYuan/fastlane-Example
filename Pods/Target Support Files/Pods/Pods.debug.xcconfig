@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/GTSDK" "${PODS_ROOT}/Headers/Public/UIViewController+Swizzled"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/GTSDK"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/GTSDK" -isystem "${PODS_ROOT}/Headers/Public/UIViewController+Swizzled"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"GeTuiSdk-1.3.2" -l"UIViewController+Swizzled" -l"sqlite3.0" -l"z" -framework "AVFoundation" -framework "CFNetwork" -framework "CoreBluetooth" -framework "CoreLocation" -framework "CoreTelephony" -framework "SystemConfiguration"
+PODS_ROOT = ${SRCROOT}/Pods

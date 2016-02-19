@@ -1,0 +1,13 @@
+PODS:
+  - GTSDK (1.3.2)
+  - UIViewController+Swizzled (1.4)
+
+DEPENDENCIES:
+  - GTSDK (~> 1.3.2)
+  - UIViewController+Swizzled (~> 1.2)
+
+SPEC CHECKSUMS:
+  GTSDK: 9ea284237331495fd76a71088bfd2da30981d510
+  UIViewController+Swizzled: 1cd9397598ede6930f94fbcac4b43d63c7aa0dbb
+
+COCOAPODS: 0.39.0
