@@ -19,9 +19,9 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>01252008</string>
+	<string>02192012</string>
 	<key>ChannelID</key>
-	<string>AppStore</string>
+	<string>Enterprise</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

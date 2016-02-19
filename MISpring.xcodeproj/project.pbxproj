@@ -493,7 +493,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = "MISpring/MISpring-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mizhe.spring;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mizhe.spring.enterprise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -509,7 +509,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = "MISpring/MISpring-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mizhe.spring;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mizhe.spring.enterprise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -522,7 +522,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MISpringTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mizhe.spring;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mizhe.spring.enterprise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MISpring.app/MISpring";
 			};
@@ -534,7 +534,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MISpringTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mizhe.spring;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mizhe.spring.enterprise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MISpring.app/MISpring";
 			};
@@ -545,7 +545,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = MISpringUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mizhe.spring;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mizhe.spring.enterprise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = MISpring;
 				USES_XCTRUNNER = YES;
@@ -557,7 +557,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = MISpringUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mizhe.spring;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mizhe.spring.enterprise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = MISpring;
 				USES_XCTRUNNER = YES;
