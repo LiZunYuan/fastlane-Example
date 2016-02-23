@@ -18,8 +18,8 @@ fs.readFile(jsonFile, 'utf8', (err, result) => {
   
   const println = console.log
   println('<!Doctype html>')
-  println('<html xmlns=http://www.w3.org/1999/xhtml>')
-  println('<head><meta http-equiv=Content-Type content="text/html;charset=utf-8"></head>')
+  println('<html lang="zh-CN">')
+  println('<head><meta charset="UTF-8"></head>')
   println('<body>')
   println('<style>')
   println('.Error{color: red}')
