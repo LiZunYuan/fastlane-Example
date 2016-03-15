@@ -71,8 +71,7 @@ def generate_ipa(typePrefix,codesigningIdentity,exportMethod,options)
       include_bitcode: 'false',
       provisioning_profile_path: "./fastlane/provision/#{typePrefix}.mobileprovision",
       archive_path: './build/',
-      export_method: "#{exportMethod}”,
-      use_legacy_build_api: 'true'
+      export_method: "#{exportMethod}”
     )
 
     # sh "mv ./../build/#{APP_NAME}.app.dSYM.zip ./../build/#{APP_NAME}_#{fullVersion}_#{typePrefix}.app.dSYM.zip"
